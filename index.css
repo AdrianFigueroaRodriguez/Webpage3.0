@@ -1,0 +1,147 @@
+html, body{
+    width: auto;
+    height: 100%; /*Change for size change in height*/
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding-bottom: 26px;
+}
+
+.py-4{
+    padding: 0px !important;
+}
+
+.container{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    background-image: url("/Assets/IS-Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    transition: all 1s ease-in-out 0s;
+    min-width: 220px;
+}
+
+header{
+    width: auto;
+    height: 0px;
+}
+
+button{
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+    color: #ffffff;
+}
+
+nav{
+    width: 100%;
+    flex: 0 1 70px;
+    background-color: transparent; /* #2699FB;*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    transition: all 1s ease-in-out 0s;
+    display: flex;
+    border-top: #ffffff solid 26px;
+    min-width: 220px;
+}
+
+div{
+    padding: 0px
+}
+
+nav div #n-ml-c{
+    padding: 2.5px 40px 2.5px 26px;
+    transition: all 1s ease-in-out 0s;
+}
+
+nav div .n-o-c{
+    display: flex;
+    transition: all 1s ease-in-out 0s;
+}
+
+.n-o-cs{
+    padding-right: 40px ;
+}
+
+.n-m-c{
+    padding-right: 26px;
+}
+
+nav div button img{
+    max-height: 65px;
+}
+
+#nmdi{
+    visibility: visible;
+}
+
+#navbarNavAltMarkup{
+    position: absolute;
+    margin-top: 70px;
+    background-color: #2699FB;
+    width: 100%;
+}
+
+#navbarNavAltMarkup div a{
+    color: #ffffff;
+}
+
+main{
+    width: auto;
+    flex: 1 1 auto;
+    transition: all 1s ease-in-out 0s;
+    background-color: transparent;
+    min-width: 220px;
+}
+
+section {
+    width: auto;
+    height: 100%;
+    background-color: transparent;
+    transition: all 1s ease-in-out 0s;
+    min-width: 220px;
+}
+
+footer{
+    width: auto;
+    flex: 0 1 240px;
+    background-color: transparent;
+    min-width: 220px;
+}
+
+.ft-s-t{
+    width: auto;
+    height: 190px;
+    background-color: transparent;/* #7FC4FD;*/
+    transition: all 1s ease-in-out 0s;
+}
+
+.ft-s-b{
+    width: auto;
+    height: 50px;
+    background-color: transparent; /* #2699FB;*/
+    transition: all 1s ease-in-out 0s;
+}
+
+@media screen and (max-width: 767px){
+    nav div div div{
+        display: none;
+    }
+
+    #navbarNavAltMarkup2{
+        display: none;
+    }
+
+    main{
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 767.1px){
+    .nNAM2{
+        display: none;
+    }
+}
