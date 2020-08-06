@@ -1,38 +1,17 @@
+/* Tag adjustments*/ 
 html, body{
     width: auto;
     height: 100%; /*Change for size change in height*/
+    min-height: 650px;
     box-sizing: border-box;
     background-color: #ffffff;
     padding-bottom: 26px;
-}
-
-.py-4{
-    padding: 0px !important;
-}
-
-.container{
-    width: auto;
-    height: 100%;
-    display: flex;
-    flex-flow: column;
-    background-image: url("/Assets/IS-Background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
     transition: all 1s ease-in-out 0s;
-    min-width: 220px;
 }
 
 header{
     width: auto;
     height: 0px;
-}
-
-button{
-    background-color: transparent;
-    border: 0px;
-    padding: 0px;
-    color: #ffffff;
 }
 
 nav{
@@ -48,58 +27,18 @@ nav{
     min-width: 220px;
 }
 
-div{
-    padding: 0px
-}
-
-nav div #n-ml-c{
-    padding: 2.5px 40px 2.5px 26px;
-    transition: all 1s ease-in-out 0s;
-}
-
-nav div .n-o-c{
-    display: flex;
-    transition: all 1s ease-in-out 0s;
-}
-
-.n-o-cs{
-    padding-right: 40px ;
-}
-
-.n-m-c{
-    padding-right: 26px;
-}
-
-nav div button img{
-    max-height: 65px;
-}
-
-#nmdi{
-    visibility: visible;
-}
-
-#navbarNavAltMarkup{
-    position: absolute;
-    margin-top: 70px;
-    background-color: #2699FB;
-    width: 100%;
-}
-
-#navbarNavAltMarkup div a{
-    color: #ffffff;
-}
-
 main{
     width: auto;
     flex: 1 1 auto;
     transition: all 1s ease-in-out 0s;
     background-color: transparent;
     min-width: 220px;
+    position: static;
 }
 
 section {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     background-color: transparent;
     transition: all 1s ease-in-out 0s;
     min-width: 220px;
@@ -107,26 +46,272 @@ section {
 
 footer{
     width: auto;
-    flex: 0 1 240px;
+    flex: 0 1 0px; /*0 1 240px*/
     background-color: transparent;
     min-width: 220px;
 }
 
-.ft-s-t{
+div{
+    padding: 0px
+}
+
+button{
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+    color: #ffffff;
+}
+
+figure{
+    margin: 0px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* Bootstrap class adjustments*/
+.container{
     width: auto;
-    height: 190px;
-    background-color: transparent;/* #7FC4FD;*/
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    background-image: url("/Assets/IS-Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    transition: all 1s ease-in-out 0s;
+    min-width: 220px;
+}
+
+.py-4{
+    padding: 0px !important;
+}
+
+.row, .col-lg-6, .col-6, p{
+    padding: 0px;
+    margin: 0px;
+    position: static;
+}
+
+.nav-link{
+    padding: .25rem .5rem !important;
+}
+
+.col-md-1{
+    visibility: visible;
+}
+
+/* navbar - main logo - container*/
+.n-ml-c{
+    padding: 2.5px 40px 2.5px 26px;
+    transition: all 1s ease-in-out 0s;
+    opacity: 0.001%;
+}
+
+/* navbar- main logo - container - image*/
+nav div button img{
+    max-height: 65px;
+    
+}
+
+/* navbar - options - contianer*/
+.n-o-c{
+    display: flex;
+    transition: all 1s ease-in-out 0s;
+    opacity: 0.001%;
+}
+
+/* navbar - options - container - items*/
+.n-o-c-i{
+    padding-right: 40px ;
+}
+
+/* navbar - menu - container*/
+.n-m-c{
+    padding-right: 26px;
+}
+
+/* navbar - icons*/
+.n-i{
+    height: 18px;
+}
+
+/* navbar - dropdown - search - container*/
+.n-d-s-c{
+    height: 25px;
+    padding-left: 15px !important;
+    padding: 4px 0px;
+    border-radius: 20px;
+    border: none;
+}
+
+/* navbarNavAltMarkup list items container*/
+#navbarNavAltMarkup{
+    position: absolute;
+    margin-top: 70px;
+    background-color: #2699FB;
+    width: 100%;
+}
+
+/* navbarNavAltMarkup list items*/
+#navbarNavAltMarkup div a{
+    color: #ffffff;
+}
+
+/* main - container*/
+#m-c{
+    position: static;
+}
+
+/* main - initial screen - logo / slogan*/
+#m-is-l, #m-is-s{
+    min-width: 220px;
+    max-width: 100%;
+    width: auto;
     transition: all 1s ease-in-out 0s;
 }
 
-.ft-s-b{
+/* main - video player - container*/
+.m-vp-c{
+    max-height: 700px;
+    background-color: #000000;   
+}
+
+/* main - video player - video*/
+#m-vp-v{
+    max-height: 600px;
+    padding-left: 66px;
+}
+
+/* social media - imagenes*/
+.sm-i{
+    max-width: 40px;
+    padding-top: 10px;
+    margin-right: 26px;
+}
+
+/* social media - logo*/
+.sm-logo{
+    max-width: 40px;
+    max-height: 40px;
+}
+
+/* main - nostros somos - contenedor*/
+.m-ns-c{
+    padding: 26px;
+    margin: 0px;
+}
+
+/* main - nostros somos - sub contendor 2*/
+.m-ns-sc2{
+    color: #ffffff;
+}
+
+/* main - mision y vision - container*/
+.m-mv-c{
+    padding-top: 0px !important;
+    padding: 26px;
+    color: #ffffff;
+}
+
+/* main - cartas de servicio - carta*/
+.c{
     width: auto;
-    height: 50px;
-    background-color: transparent; /* #2699FB;*/
+    height: auto;
+    background-color: #ffffff;
+    margin-top: 0px !important;
+    margin: 26px;
+}
+
+/* carta - texto - contenedor*/
+.ct{
+    width: auto;
+    height: auto;
+}
+
+/* card-link */
+.card-link + .card-link{
+    float: right
+}
+
+/* card-link star*/
+.cl-star{
+    visibility: collapse;
+}
+
+/* carta - residencial - imagen*/
+.cri{
+    background-image: url('/Assets/C\ img\ residencial.JPG');
+}
+
+/* carta - comercial - imagen*/
+.cci{
+    background-image: url('/Assets/C\ img\ comercial.jpg');
+}
+
+/* carta - industrial - imagen*/
+.cii{
+    background-image: url('/Assets//C\ img\ industrial.jpg');
+}
+
+/* footer - contenedor - superior*/
+.ft-c-s{
+    width: auto;
+    height: 0px; /*190px */
+    background-color: #7FC4FD;
+    transition: all 1s ease-in-out 0s;
+    padding: 26px;
+    font-size: small;
+    color: #ffffff;
+}
+
+/* header superior - h5 */
+.hs h5{
+    width: 100%;
+}
+
+/* header superior - p*/
+.hs p{
+    padding-top: 10px;
+}
+
+/* .ft-c-s .dir*/
+.dir{
+    min-width: 205.5px;
+    width: 100%;
+}
+
+/* .ft-c-s .db-num*/
+.db-num{
+    padding-top: 30px;
+}
+
+/* footer - contenedor - inferior*/
+.ft-c-i{
+    width: auto;
+    height: 0px; /*50px*/
+    background-color: #2699FB;
     transition: all 1s ease-in-out 0s;
 }
 
-@media screen and (max-width: 767px){
+.s-m-i{
+    padding: 11.25px 26px;
+}
+
+.s-m-i div {
+    padding-left: 10px;    
+}
+
+.f-i{
+    height: 26px;
+    max-height: 30px;
+    width: auto;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) { 
     nav div div div{
         display: none;
     }
@@ -135,13 +320,120 @@ footer{
         display: none;
     }
 
-    main{
-        background-color: red;
+    .m-ns-sc1{
+        padding-bottom: 26px;
+    }
+
+    .ci{
+        height: 200px;
+        width: auto;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cci{
+        background-position: top !important;
+    }
+
+    .col-md-1{
+        visibility: hidden;
     }
 }
 
+
+/* navbarNavAltMarkup media tag especial*/ 
+/* No usar al menos de que sea para este elemento*/
 @media screen and (min-width: 767.1px){
     .nNAM2{
         display: none;
     }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 576.01px) and (max-width: 768px) { 
+    nav div div div{
+        display: none;
+    }
+
+    #navbarNavAltMarkup2{
+        display: none;
+    }
+
+    .m-ns-sc1{
+        padding-bottom: 26px;
+    }
+
+    .ci{
+        height: 200px;
+        width: auto;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cci{
+        background-position: top;
+    }
+    
+    .col-md-1{
+        visibility: hidden;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 768.01px) and (max-width: 992px) {
+    .n-o-c-i{
+        padding-right: 30px;
+    }
+    
+    .nNAM2{
+        display: none;
+    }
+
+    .m-ns-sc1{
+        padding-bottom: 26px;
+    }
+    
+    .ci{
+        height: 300px;
+        width: auto;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cci{
+        background-position: top !important;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 992.01px) { 
+    .nNAM2{
+        display: none;
+    }
+
+    .m-ns-sc2{
+        padding-left: 26px;
+    }
+    
+    .c{
+        margin: 0px;
+        padding: 26px;
+        background-color: transparent;
+    }
+
+    .ct{
+        background-color: #ffffff;
+    }
+
+    .ci{
+        height: 200px;
+        width: auto;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cci{
+        background-position: top;
+    }
+    
 }

@@ -17,33 +17,33 @@
     <header></header>    
     <nav>
         <div class="d-flex flex-grow-1">
-            <div id="n-ml-c">
+            <div class="n-ml-c">
                 <button>
                     <img src="/Assets/Logo Figueroas Clean.svg">
                 </button>
             </div>
             <div class="n-o-c align-self-center">
-                <div class="n-o-cs" id="n-o-cInicio">
+                <div class="n-o-c-i">
                     <button>Inicio</button>
                 </div>
-                <div class="n-o-cs" id="n-o-cNosotrosSomos">
+                <div class="n-o-c-i">
                     <button>Nuestros servicios</button>
                 </div>
-                <div class="n-o-cs" id="n-o-cCotizaciones">
+                <div class="n-o-c-i">
                     <button>Cotizaciones</button>
                 </div>
-                <div class="n-o-cs" id="n-o-cContactanos">
+                <div class="n-o-c-i">
                     <button>Contactanos</button>
                 </div>
             </div>
         </div>
         <div class="align-self-center n-m-c">
-            <button class="navbar-toggler n-m-c" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="nmc()">
-                <img class="n-m-c-i" src="Assets/N-MenuIcon.svg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="nmc()">
+                <img class="n-m-c-i n-i" src="Assets/N-MenuIcon.svg">
             </button>
         </div>
 
-        <!-- para dispositivos chicos-->
+        <!-- collapse menu -->
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav text-center">
                 <div class="nav-item nav-link nNAM2" href="#">
@@ -59,36 +59,189 @@
                     <button>Contactanos</button>
                 </div>
                 <div class="nav-item nav-link" href="#">
-                    <button>Busqueda</button>
+                    <input type="text" class="n-d-s-c">
+                    <button>
+                        <img class="n-i" src='/Assets/N-SearchIcon.svg'>
+                    </button>
                 </div>
                 <div class="nav-item nav-link" href="#">
-                    <button>Notificaciones</button>
+                    <button>
+                        <img class="n-i" src="/Assets/N-NotificationIcon.svg">
+                    </button>
                 </div>
                 <div class="nav-item nav-link" href="#">
-                    <button class="navbar-toggler n-d-c" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="nmc()">
-                        <img class="n-d-c-i" src="Assets/N-CancelIcon.svg">
+                    <button class="navbar-toggler n-d-c" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="ndc()">
+                        <img class="n-d-c-i n-i" src="Assets/N-CancelIcon.svg">
                     </button>
                 </div>
                 <!-- Disabled link -->
                 <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
             </div>
           </div>
-        <!-- fin -->
-
-
-
-
+          <!-- end -->
     </nav>
     <main>
-        <section>
-            
-            <figure></figure>
-            <figure></figure>
+        <!-- main - initial section - container-->
+        <section id="m-is-c">
+            <figure>
+                <img class="rounded mx-auto d-block" id="m-is-l" src='/Assets/Logo Figueroas Clean.svg'>
+            </figure>
+            <figure >
+                <img class="rounded mx-auto d-block" id="m-is-s" src="/Assets/IS Slogan.png">
+            </figure>
+        </section>
+        <!-- main - container -->
+        <section id="m-c">
+            <!-- main - video player - container -->
+            <section class="m-vp-c d-flex">
+                <video class="w-100" id="m-vp-v" autoplay loop muted>
+                    <source src="/Assets/VP Video prueba.MP4" type="video/mp4">
+                </video>
+                <div id="m-vp-smc" class="flex-shrink-0">
+                    <figure class="sm-i">
+                        <a href="https://web.whatsapp.com/" class="button">
+                            <img class="sm-logo" src='/Assets/VP wa Logo.svg'>
+                        </a>
+                    </figure>
+                    <figure class="sm-i">
+                        <a href="https://www.messenger.com/t/Figueroasclean1" class="button">
+                            <img class="sm-logo" src="/Assets/VP ms Logo.png">
+                        </a>
+                    </figure>
+                    <figure class="sm-i"> 
+                        <a href="https://www.facebook.com/Figueroasclean1/" class="button">
+                            <img class="sm-logo" src="Assets/VP fb Logo.png">
+                        </a>
+                    </figure>
+                    <figure class="sm-i">
+                        <a href="https://www.instagram.com/figueroasclean_jrz/" class="button">
+                            <img class="sm-logo" src="/Assets/VP ig Logo.png">
+                        </a>
+                    </figure>
+                </div>
+            </section>
+            <!-- main - nosotros somos - container -->
+            <section class="m-ns-c row "> 
+                <figure class='col-lg-6 m-ns-sc1' >
+                    <img src="/Assets/ns Image.jpg">
+                </figure>
+                <div class='col-lg-6 m-ns-sc2'>
+                    <h1 class="text-center">Nosotros Somos</h1>
+                    <p class="text-justify"> Somos una empresa seria y responsable dedicada al cuidado de la salud.</p>
+                </div>
+            </section>
+            <!-- main - mision y vision - container -->
+            <section class="m-mv-c row"> 
+                <div class="col-lg-6">
+                    <h1 class="text-center">Mision</h1>
+                    <p class="text-justify">Nuestra mision es...</p>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="text-center">Vision</h1>
+                    <p class="text-justify">Nuestra vision es..</p>
+                </div>
+            </section>
+            <!-- main - cartas deservicio - container-->
+            <section class="m-cs-c ">
+                <div class="row">
+                    <!-- Residencial -->
+                    <div class="m-cs-sc-sr c col-lg-6">
+                        <div class="card-body ct ">
+                            <h5 class="card-title text-center">Servicios Residenciales </h5>
+                            <p class="card-text text-wrap text-justify">
+                                Nuestros servicios residenciales son para ti, para tu familiar o un amigo, nos enfocamos en dejar tu espacio personal como se debe, limpio y bonito. 
+                            </p>
+                            <a href="#" class="card-link cl-star" style='width: 21px; height: 21px;'>
+                                <svg width="21px" height="21px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" >
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="card-link">Ver servicios</a>
+                        </div>
+                        <div class="ci cri "> </div>
+                    </div>
+
+                    <!-- Comercial -->
+                    <div class="m-cs-sc-sc c col-lg-6">    
+                        <!-- Card -->
+                        <div class="card-body ct ">
+                            <h5 class="card-title text-center">Servicios Comerciales </h5>
+                            <p class="card-text text-wrap text-justify">
+                                Nuestros servicios comerciales estan diseñados para ser rapidos, 
+                                eficientes y con sus clientes en mente, para que luzca su negocio 
+                                como se debe.
+                            </p>
+                            <a href="#" class="card-link cl-star " style='width: 21px; height: 21px;'>
+                                <svg width="21px" height="21px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" >
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="card-link">Ver servicios</a>
+                        </div>
+                        <!-- Image -->
+                        <div class="ci cci"></div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <!-- Industrial -->
+                    <div class="m-cs-sc-si c col-lg-6">
+                        <div class="card-body ct">
+                            <h5 class="card-title text-center">Servicios Industriales</h5>
+                            <p class="card-text text-wrap text-justify">
+                                Nuestros servicios industriales, son seguros, rapidos y sin riesgos.
+                                Garantizamos todos nuestros servicios y ofrecemos facilidad de pago.
+                            </p>
+                            <a href="#" class="card-link cl-star" style='width: 21px; height: 21px;'>
+                                <svg width="21px" height="21px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" >
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="card-link">Ver servicios</a>
+                        </div>
+                        <div class="ci cii"></div>
+                    </div>
+                </div>
+                
+                
+            </section>
+
         </section>
     </main>
     <footer>
-        <section class="ft-s-t"></section>
-        <section class="ft-s-b"></section>
+        <section class="ft-c-s row">
+            <div class="col-6 col-md-5 hs">
+                <h5 class="text-center">Horario de Servicio</h5>
+                <p class="text-center ">Lunes a sabado: 8:00a.m. - 4:00p.m.</p>
+                <p class="text-center">Domingo: Cerrado</p>
+            </div>
+            <div class="col-6 col-md-6">
+                <p class="text-center dir">Ciudad Juarez, Chihuahua, Mexico</p>
+                <p class="text-center cp">C.P. 32667</p>
+                <div class="db-num">
+                    <p class="text-center">Celular: +52 - 656 - 603 - 6947</p>
+                    <p class="text-center">Oficina: 693 - 2537</p>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <button>
+                    <img src="/Assets/F-Up arrow.svg">
+                </button>
+            </div>
+        </section>
+        <section class="ft-c-i">
+            <div class="row d-flex justify-content-end s-m-i">
+                <div>
+                    <button>
+                        <img class="f-i" src='/Assets/F-Facebook.svg'>
+                    </button>
+                </div>
+                <div>
+                    <button>
+                        <img class="f-i" src='/Assets/F-Instagram.svg'>
+                    </button>
+                </div>
+            </div>
+        </section>
     </footer>
 
 
@@ -104,8 +257,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <!--Bootstrap.js -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <!--Ajax,.js-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--Ajax,.js
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
     <!--Personalized.js -->
     <script src="/index.js"></script>
   </body>
