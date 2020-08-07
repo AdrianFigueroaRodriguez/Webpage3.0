@@ -122,10 +122,20 @@
             </section>
             <!-- main - nosotros somos - container -->
             <section class="m-ns-c row "> 
-                <figure class='col-lg-6 m-ns-sc1' >
-                    <img src="/Assets/ns Image.jpg">
-                </figure>
-                <div class='col-lg-6 m-ns-sc2'>
+                <div class='col-lg-6 m-ns-sc1' id="n-ns-sc1">
+                    <button onclick="expand()" type="button" class="" data-toggle="modal" data-target="#exampleModal">
+                        <img src="/Assets/ns Image.jpg">
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade m-s" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered m-i-fix">
+                    <div class="modal-content">
+                        <img src="/Assets/ns Image.jpg">
+                    </div>
+                    </div>
+                </div>
+                <div class='col-lg-6 m-ns-sc2' id="n-ns-sc2">
                     <h1 class="text-center">Nosotros Somos</h1>
                     <p class="text-justify"> Somos una empresa seria y responsable dedicada al cuidado de la salud.</p>
                 </div>
@@ -158,7 +168,9 @@
                             </a>
                             <a href="#" class="card-link">Ver servicios</a>
                         </div>
-                        <div class="ci cri "> </div>
+                        <button class="ci cri" onclick="cardImgExpand('#ci-r')">
+                            <img id="ci-r" src="Assets/C img residencial.JPG">
+                        </button>
                     </div>
 
                     <!-- Comercial -->
@@ -179,7 +191,9 @@
                             <a href="#" class="card-link">Ver servicios</a>
                         </div>
                         <!-- Image -->
-                        <div class="ci cci"></div>
+                        <button class="ci cci" onclick="cardImgExpand('#ci-c')">
+                            <img id="ci-c" src="/Assets/C img comercial.jpg">
+                        </button>
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -198,11 +212,12 @@
                             </a>
                             <a href="#" class="card-link">Ver servicios</a>
                         </div>
-                        <div class="ci cii"></div>
+                        <!-- Image -->
+                        <button class="ci" onclick="cardImgExpand('#ci-i')">
+                            <img id="ci-i" src="/Assets/C img industrial.jpg">
+                        </div>
                     </div>
                 </div>
-                
-                
             </section>
 
         </section>
@@ -224,7 +239,7 @@
             </div>
             <div class="col-md-1">
                 <button>
-                    <img src="/Assets/F-Up arrow.svg">
+                    <img id='ftcsArrow 'src="/Assets/F-Up arrow.svg">
                 </button>
             </div>
         </section>

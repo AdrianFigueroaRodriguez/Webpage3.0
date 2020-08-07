@@ -47,3 +47,43 @@ function ndc(){
         $('.n-m-c').css('visibility', 'visible');
     }
 }
+
+function expand(){
+    if((window.matchMedia("(min-width: 992.01px)").matches)){
+        if(document.getElementById('n-ns-sc1').classList.contains('col-lg-12')){
+            document.getElementById('n-ns-sc1').classList.remove('col-lg-12');
+            document.getElementById('n-ns-sc1').classList.add('col-lg-6');
+            setTimeout(function(){
+                $('#n-ns-sc2').css('display','block');
+            }, 1000);
+        } else{
+            $('#n-ns-sc2').css('display','none');
+            document.getElementById('n-ns-sc1').classList.remove('col-lg-6');
+            document.getElementById('n-ns-sc1').classList.add('col-lg-12');
+        }
+    }
+}
+
+function cardImgExpandXL(x){
+
+}
+
+
+function cardImgExpandSM_LG(x){
+    if($(`${x}`).prop('height') === 200){
+        $(`${x}`).css('margin-top', '-173px');
+        $(`${x}`).css('height', '187%');
+    } else{
+        $(`${x}`).css('margin-top', '0px');
+        $(`${x}`).css('height', '100%');
+    }
+}
+
+function cardImgExpand(x){
+    if((window.matchMedia("(min-width: 992.001px)").matches)){
+        cardImgExpandXL(x);
+    } else{
+        cardImgExpandSM_LG(x);
+    }
+}
+

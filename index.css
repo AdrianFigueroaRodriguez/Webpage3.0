@@ -4,7 +4,7 @@ html, body{
     height: 100%; /*Change for size change in height*/
     min-height: 650px;
     box-sizing: border-box;
-    background-color: #ffffff;
+    background-color: #fff8e7;
     padding-bottom: 26px;
     transition: all 1s ease-in-out 0s;
 }
@@ -56,6 +56,7 @@ div{
 }
 
 button{
+    min-width: 100%;
     background-color: transparent;
     border: 0px;
     padding: 0px;
@@ -68,7 +69,7 @@ figure{
 
 img{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 /* Bootstrap class adjustments*/
@@ -89,7 +90,7 @@ img{
     padding: 0px !important;
 }
 
-.row, .col-lg-6, .col-6, p{
+.row, .col-lg-6, .col-6, p, .col-lg-12{
     padding: 0px;
     margin: 0px;
     position: static;
@@ -101,6 +102,20 @@ img{
 
 .col-md-1{
     visibility: visible;
+}
+
+.modal-content{
+    background-color: transparent;
+    border: none;
+}
+
+.modal-dialog-centered{
+    min-height: 100%;
+}
+
+#exampleModal{
+    margin: auto;
+    padding: 0px 20px !important;
 }
 
 /* navbar - main logo - container*/
@@ -204,6 +219,12 @@ nav div button img{
     margin: 0px;
 }
 
+/* modal - image - fix*/
+.m-i-fix{ 
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
 /* main - nostros somos - sub contendor 2*/
 .m-ns-sc2{
     color: #ffffff;
@@ -242,19 +263,21 @@ nav div button img{
 }
 
 /* carta - residencial - imagen*/
-.cri{
-    background-image: url('/Assets/C\ img\ residencial.JPG');
+#ci-r{
+    transition: all .5s ease-in-out 0s;
 }
 
 /* carta - comercial - imagen*/
-.cci{
-    background-image: url('/Assets/C\ img\ comercial.jpg');
+#ci-c{
+    transition: all .5s ease-in-out 0s;
 }
 
 /* carta - industrial - imagen*/
-.cii{
-    background-image: url('/Assets//C\ img\ industrial.jpg');
+#ci-i{
+    transition: all .5s ease-in-out 0s;
 }
+
+
 
 /* footer - contenedor - superior*/
 .ft-c-s{
@@ -287,6 +310,12 @@ nav div button img{
 .db-num{
     padding-top: 30px;
 }
+
+#ftcsArrow{
+    max-width: 26px;
+    height: auto;
+}
+
 
 /* footer - contenedor - inferior*/
 .ft-c-i{
@@ -373,7 +402,7 @@ nav div button img{
     .cci{
         background-position: top;
     }
-    
+
     .col-md-1{
         visibility: hidden;
     }
@@ -435,5 +464,31 @@ nav div button img{
     .cci{
         background-position: top;
     }
-    
+
+    .modal-backdrop, .fade .show {
+        opacity: 100%;
+        position: static;
+        background-color: transparent;
+        transition: none;
+        overflow: auto;
+    }
+
+    body{
+        max-height: 2250px;;
+        max-width: none;
+    }
+
+    .modal-open{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .m-s{
+        visibility: hidden; 
+    }
+
+    #n-ns-sc1{
+        transition: all 1s ease-in-out 0s;
+    }
+  
 }
