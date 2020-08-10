@@ -8,14 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/bootstrap-4.5.0-dist/css/bootstrap.css">
     <!-- Personalized CSS-->
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="index.css">
 
     <title>Figueroas clean</title>
     <link rel="Figueroas Clean icon" href="Assets/Logo Figueroas Clean.svg" type="image/x-icon">
   </head>
   <body class="py-4 container">
     <header></header>    
-    <nav>
+    <nav id="nav">
         <div class="d-flex flex-grow-1">
             <div class="n-ml-c">
                 <button>
@@ -24,16 +24,24 @@
             </div>
             <div class="n-o-c align-self-center">
                 <div class="n-o-c-i">
-                    <button>Inicio</button>
+                    <a href="#nav">
+                        <button>Inicio</button>
+                    </a>
                 </div>
                 <div class="n-o-c-i">
-                    <button>Nuestros servicios</button>
+                    <a href="ns.html">
+                        <button>Nuestros servicios</button>
+                    </a>
                 </div>
                 <div class="n-o-c-i">
-                    <button>Cotizaciones</button>
+                    <a href="cot.html">
+                        <button>Cotizaciones</button>
+                    </a>
                 </div>
                 <div class="n-o-c-i">
-                    <button>Contactanos</button>
+                    <a href="con.html">
+                        <button>Contactanos</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -46,17 +54,23 @@
         <!-- collapse menu -->
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav text-center">
-                <div class="nav-item nav-link nNAM2" href="#">
+                <div class="nav-item nav-link nNAM2" href="#m-c">
                     <button>Inicio</button>
                 </div>
-                <div class="nav-item nav-link nNAM2" href="#">
-                    <button>Nuestros servicios</button>
+                <div class="nav-item nav-link nNAM2" >
+                    <a href="ns.html">
+                        <button>Nuestros servicios</button>
+                    </a>
                 </div>
                 <div class="nav-item nav-link nNAM2" href="#">
-                    <button>Cotizaciones</button>
+                    <a href="cot.html">
+                        <button>Cotizaciones</button>
+                    </a>
                 </div>
                 <div class="nav-item nav-link nNAM2" href="#">
-                    <button>Contactanos</button>
+                    <a href="con.html">
+                        <button>Contactanos</button>
+                    </a>
                 </div>
                 <div class="nav-item nav-link" href="#">
                     <input type="text" class="n-d-s-c">
@@ -155,11 +169,12 @@
             <section class="m-cs-c ">
                 <div class="row">
                     <!-- Residencial -->
-                    <div class="m-cs-sc-sr c col-lg-6">
+                    <div class="m-cs-sc-sr c col-lg-6" id="m-cs-sc-sr-id">
                         <div class="card-body ct ">
                             <h5 class="card-title text-center">Servicios Residenciales </h5>
                             <p class="card-text text-wrap text-justify">
-                                Nuestros servicios residenciales son para ti, para tu familiar o un amigo, nos enfocamos en dejar tu espacio personal como se debe, limpio y bonito. 
+                                Nuestros servicios residenciales son para ti, para tu familiar o un
+                                amigo, nos enfocamos en dejar tu espacio personal limpio y bonito. 
                             </p>
                             <a href="#" class="card-link cl-star" style='width: 21px; height: 21px;'>
                                 <svg width="21px" height="21px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" >
@@ -168,13 +183,13 @@
                             </a>
                             <a href="#" class="card-link">Ver servicios</a>
                         </div>
-                        <button class="ci cri" onclick="cardImgExpand('#ci-r')">
+                        <button class="ci cri" id="cri-id" onclick="cardImgExpand('#ci-r')">
                             <img id="ci-r" src="Assets/C img residencial.JPG">
                         </button>
                     </div>
 
                     <!-- Comercial -->
-                    <div class="m-cs-sc-sc c col-lg-6">    
+                    <div class="m-cs-sc-sc c col-lg-6" id="m-cs-sc-sc-id">    
                         <!-- Card -->
                         <div class="card-body ct ">
                             <h5 class="card-title text-center">Servicios Comerciales </h5>
@@ -191,14 +206,14 @@
                             <a href="#" class="card-link">Ver servicios</a>
                         </div>
                         <!-- Image -->
-                        <button class="ci cci" onclick="cardImgExpand('#ci-c')">
+                        <button class="ci cci" id="cci-id" onclick="cardImgExpand('#ci-c')">
                             <img id="ci-c" src="/Assets/C img comercial.jpg">
                         </button>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <!-- Industrial -->
-                    <div class="m-cs-sc-si c col-lg-6">
+                    <div class="m-cs-sc-si c col-lg-6" id="m-cs-sc-si-id">
                         <div class="card-body ct">
                             <h5 class="card-title text-center">Servicios Industriales</h5>
                             <p class="card-text text-wrap text-justify">
@@ -213,7 +228,7 @@
                             <a href="#" class="card-link">Ver servicios</a>
                         </div>
                         <!-- Image -->
-                        <button class="ci" onclick="cardImgExpand('#ci-i')">
+                        <button class="ci cii" id="cii-id" onclick="cardImgExpand('#ci-i')">
                             <img id="ci-i" src="/Assets/C img industrial.jpg">
                         </div>
                     </div>
@@ -237,7 +252,7 @@
                     <p class="text-center">Oficina: 693 - 2537</p>
                 </div>
             </div>
-            <div class="col-md-1">
+            <div class="col-md-1" id="ftcsArrowContainer">
                 <button>
                     <img id='ftcsArrow 'src="/Assets/F-Up arrow.svg">
                 </button>
@@ -258,13 +273,6 @@
             </div>
         </section>
     </footer>
-
-
-
-
-
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -275,6 +283,6 @@
     <!--Ajax,.js
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
     <!--Personalized.js -->
-    <script src="/index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
