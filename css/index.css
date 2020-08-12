@@ -47,8 +47,9 @@ section {
 footer{
     width: auto;
     flex: 0 1 0px; /*0 1 240px*/
-    background-color: transparent;
+    background-color: #7FC4FD;
     min-width: 220px;
+
 }
 
 div{
@@ -199,7 +200,7 @@ nav div button img{
 
 /* main - video player - video*/
 #m-vp-v{
-    max-height: 600px;
+    max-height: 500px;
     padding-left: 66px;
 }
 
@@ -264,10 +265,10 @@ nav div button img{
     visibility: collapse;
 }
 
-.cies-r {
-    transition: all 1s ease-in-out 0s;
-}
 
+#m-cs-sc-si-id{
+    margin-bottom: 26px;
+}
 
 /* footer - contenedor - superior*/
 .ft-c-s{
@@ -275,14 +276,19 @@ nav div button img{
     height: 0px; /*190px */
     background-color: #7FC4FD;
     transition: all 1s ease-in-out 0s;
-    padding: 26px;
+    margin: 26px;
     font-size: small;
     color: #ffffff;
 }
 
 /* header superior - h5 */
-.hs h5{
+.hs{
+    margin: 1rem 0rem;
+}
+
+.hs h6{
     width: 100%;
+    margin: .5rem 0rem;
 }
 
 /* header superior - p*/
@@ -292,7 +298,7 @@ nav div button img{
 
 /* .ft-c-s .dir*/
 .dir{
-    min-width: 205.5px;
+    
     width: 100%;
 }
 
@@ -368,6 +374,16 @@ nav div button img{
     .col-md-1{
         visibility: hidden;
     }
+
+    nav{
+        border-top: #ffffff solid 0px;
+    }
+
+    #ftcsArrowContainer{
+        padding: 0px;
+        height: 0px;
+    }
+
 }
 
 /* navbarNavAltMarkup media tag especial*/ 
@@ -451,7 +467,17 @@ nav div button img{
 }
 
 
+/* Codigo pendiente de agregar */
+/* Usar etsto para la flecha en mediano*, grande y extra grande
+            <div class="col-md-1" id="ftcsArrowContainer">
+                <button>
+                    <img id='ftcsArrow 'src="/Assets/F-Up arrow.svg">
+                </button>
+            </div>
 
+
+    *********mediano puede variar********
+*/
 
 
 

@@ -26,8 +26,8 @@ setTimeout(function(){
     $('#m-c').show();
     $('footer').show();
     //footer config adjustment
-    $('footer').css('flex', '0 1 240px');
-    $('.ft-c-s').css('height', '190px');
+    $('footer').css('flex', '0 1 ');
+    $('.ft-c-s').css('height', '100%');
     $('.ft-c-i').css('height', '50px');
     //html/body config adjustment
     $('html').css('padding-bottom', '0px');
@@ -50,13 +50,7 @@ function ndc(){
 }
 
 function cardImgExpandXS(x){
-    if($(`${x}`).prop('height') === 200){
-        $(`${x}`).css('margin-top', '-173px');
-        $(`${x}`).css('height', '187%');
-    } else{
-        $(`${x}`).css('margin-top', '0px');
-        $(`${x}`).css('height', '100%');
-    }
+    /*Optional - agregate value*/
 }
 
 function cardImgExpandS(x){

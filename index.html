@@ -136,19 +136,21 @@
             </section>
             <!-- main - nosotros somos - container -->
             <section class="m-ns-c row "> 
+                <!-- nosotros somos - image - container-->
                 <div class='col-lg-6 m-ns-sc1' id="n-ns-sc1">
-                    <button onclick="" type="button" class="" data-toggle="modal" data-target="#exampleModal">
+                    <button type="button" data-toggle="modal" data-target="#ns-modal">
                         <img src="/Assets/ns Image.jpg">
                     </button>
                 </div>
-                <!-- Modal -->
-                <div class="modal fade m-s" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered m-i-fix">
-                    <div class="modal-content">
-                        <img src="/Assets/ns Image.jpg">
+                    <!-- nosotros somos - image - Modal -->
+                    <div class="modal fade m-s" id="ns-modal" tabindex="-1" aria-labelledby="ns-modalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered m-i-fix">
+                        <div class="modal-content">
+                            <img src="/Assets/ns Image.jpg">
+                        </div>
+                        </div>
                     </div>
-                    </div>
-                </div>
+                <!-- nosotros somos - text - container -->
                 <div class='col-lg-6 m-ns-sc2' id="n-ns-sc2">
                     <h1 class="text-center">Nosotros Somos</h1>
                     <p class="text-justify"> Somos una empresa seria y responsable dedicada al cuidado de la salud.</p>
@@ -156,10 +158,12 @@
             </section>
             <!-- main - mision y vision - container -->
             <section class="m-mv-c row"> 
+                <!-- mision - container-->
                 <div class="col-lg-6">
                     <h1 class="text-center">Mision</h1>
                     <p class="text-justify">Nuestra mision es...</p>
                 </div>
+                <!-- vision - container -->
                 <div class="col-lg-6">
                     <h1 class="text-center">Vision</h1>
                     <p class="text-justify">Nuestra vision es..</p>
@@ -183,9 +187,18 @@
                             </a>
                             <a href="#" class="card-link cies-r">Ver servicios</a>
                         </div>
-                        <button class="ci" id="cri-id" onclick="cardImgExpand('#cri-id')">
+                        <!-- carta de servicio - residencial-->
+                        <button type="button" data-toggle="modal" data-target="#cs-r-modal" class="ci" id="cri-id" >
                             <img id="ci-r" src="Assets/C img residencial.JPG">
                         </button>
+                        <!-- cartas de servicio - residencial - Modal -->
+                        <div class="modal fade m-s" id="cs-r-modal" tabindex="-1" aria-labelledby="cs-r-modalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered m-i-fix">
+                            <div class="modal-content">
+                                <img src="/Assets/C img residencial.JPG">
+                            </div>
+                            </div>
+                        </div>
                         
                     </div>
 
@@ -206,10 +219,19 @@
                             </a>
                             <a href="#" class="card-link">Ver servicios</a>
                         </div>
-                        <!-- Image -->
-                        <button class="ci cci" id="cci-id" onclick="cardImgExpand('#ci-c')">
+                        <!-- carta de servicio - comercial-->
+                        <button type="button" data-toggle="modal" data-target="#cs-c-modal" class="ci cci" id="cci-id">
                             <img id="ci-c" src="/Assets/C img comercial.jpg">
                         </button>
+                        <!-- cartas de servicio - comercial - Modal -->
+                        <div class="modal fade m-s" id="cs-c-modal" tabindex="-1" aria-labelledby="cs-c-modalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered m-i-fix">
+                            <div class="modal-content">
+                                <img src="/Assets/C img comercial.jpg">
+                            </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -228,10 +250,19 @@
                             </a>
                             <a href="#" class="card-link">Ver servicios</a>
                         </div>
-                        <!-- Image -->
-                        <button class="ci cii" id="cii-id" onclick="cardImgExpand('#ci-i')">
+                        <!-- carta de servicio - industrial-->
+                        <button type="button" data-toggle="modal" data-target="#cs-i-modal" class="ci" id="cii-id">
                             <img id="ci-i" src="/Assets/C img industrial.jpg">
                         </div>
+                        <!-- cartas de servicio - comercial - Modal -->
+                        <div class="modal fade m-s" id="cs-i-modal" tabindex="-1" aria-labelledby="cs-i-modalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered m-i-fix">
+                            <div class="modal-content">
+                                <img src="/Assets/C img industrial.jpg">
+                            </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </section>
@@ -241,7 +272,7 @@
     <footer>
         <section class="ft-c-s row">
             <div class="col-6 col-md-5 hs">
-                <h5 class="text-center">Horario de Servicio</h5>
+                <h6 class="text-center">Horario de Servicio</h6>
                 <p class="text-center ">Lunes a sabado: 8:00a.m. - 4:00p.m.</p>
                 <p class="text-center">Domingo: Cerrado</p>
             </div>
@@ -252,11 +283,6 @@
                     <p class="text-center">Celular: +52 - 656 - 603 - 6947</p>
                     <p class="text-center">Oficina: 693 - 2537</p>
                 </div>
-            </div>
-            <div class="col-md-1" id="ftcsArrowContainer">
-                <button>
-                    <img id='ftcsArrow 'src="/Assets/F-Up arrow.svg">
-                </button>
             </div>
         </section>
         <section class="ft-c-i">
