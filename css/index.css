@@ -118,6 +118,9 @@ img{
     padding: 0px 20px !important;
 }
 
+
+
+
 /* navbar - main logo - container*/
 .n-ml-c{
     padding: 2.5px 40px 2.5px 26px;
@@ -242,8 +245,7 @@ nav div button img{
     width: auto;
     height: auto;
     background-color: #ffffff;
-    margin-top: 0px !important;
-    margin: 26px;
+    margin: 26px 26px 0px 26px;
 }
 
 /* carta - texto - contenedor*/
@@ -262,21 +264,9 @@ nav div button img{
     visibility: collapse;
 }
 
-/* carta - residencial - imagen*/
-#ci-r{
-    transition: all .5s ease-in-out 0s;
+.cies-r {
+    transition: all 1s ease-in-out 0s;
 }
-
-/* carta - comercial - imagen*/
-#ci-c{
-    transition: all .5s ease-in-out 0s;
-}
-
-/* carta - industrial - imagen*/
-#ci-i{
-    transition: all .5s ease-in-out 0s;
-}
-
 
 
 /* footer - contenedor - superior*/
@@ -311,6 +301,15 @@ nav div button img{
     padding-top: 30px;
 }
 
+#ftcsArrowContainer{
+    height: auto;
+}
+
+#ftcsArrowContainer button{
+    height: 0px;
+    max-width: 26px;
+}
+
 #ftcsArrow{
     max-width: 26px;
     height: auto;
@@ -339,7 +338,9 @@ nav div button img{
     width: auto;
 }
 
-/* Small devices (landscape phones, 576px and up)*/
+
+
+/* XSmall devices (landscape phones, 576px and up)*/
 @media (max-width: 576px) { 
     nav div div div{
         display: none;
@@ -369,7 +370,6 @@ nav div button img{
     }
 }
 
-
 /* navbarNavAltMarkup media tag especial*/ 
 /* No usar al menos de que sea para este elemento*/
 @media screen and (min-width: 767.1px){
@@ -378,8 +378,8 @@ nav div button img{
     }
 }
 
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 576.01px) and (max-width: 768px) { 
+/* Small devices (tablets, 768px and up)*/
+@media (min-width: 576.001px) and (max-width: 768px) { 
     nav div div div{
         display: none;
     }
@@ -408,8 +408,8 @@ nav div button img{
     }
 }
 
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 768.01px) and (max-width: 992px) {
+/* Medium devices (desktops, 992px and up)*/
+@media (min-width: 768.001px) and (max-width: 992px) {
     .n-o-c-i{
         padding-right: 30px;
     }
@@ -432,10 +432,36 @@ nav div button img{
     .cci{
         background-position: top !important;
     }
+
+
+    /* footer arrow*/
+    #ftcsArrowContainer{
+        padding-left: 29.65px;
+        padding-right: 0px;
+    }
+
+    #ftcsArrowContainer button{
+        height: auto;
+        max-width: 26px;
+    }
+
+    #ftcsArrow{
+        max-width: 26px;
+    }
 }
 
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 992.01px) { 
+
+
+
+
+
+
+
+
+
+
+/* large devices (large desktops, 992px to 1200px)*/
+@media (min-width: 992.001px) and (max-width: 1200px){ 
     .nNAM2{
         display: none;
     }
@@ -490,5 +516,36 @@ nav div button img{
     #n-ns-sc1{
         transition: all 1s ease-in-out 0s;
     }
-  
+
+    #ftcsArrowContainer{
+        padding-left: 49.6px;
+        padding-right: 0px;
+    }
+
+    #ftcsArrowContainer button{
+        height: auto;
+        max-width: 26px;
+    }
+
+    #ftcsArrow{
+        max-width: 26px;
+    }
+
 }
+
+/* extra large devices (extra large desktops, 1200px and up)*/
+@media (min-width: 1200px){
+    #ftcsArrowContainer{
+        padding-left: 64.65px;
+        padding-right: 0px;
+    }
+
+    #ftcsArrowContainer button{
+        height: auto;
+        max-width: 26px;
+    }
+
+    #ftcsArrow{
+        max-width: 26px;
+    }
+} 
