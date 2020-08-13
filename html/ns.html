@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/css/ns.css">
 
     <title>Figueroas clean</title>
-    <link rel="Figueroas Clean icon" href="Assets/Logo Figueroas Clean.svg" type="image/x-icon">
+    <link rel="Figueroas Clean icon" href="/Assets/Logo Figueroas Clean.svg" type="image/x-icon">
   </head>
   <body class="py-4 container">
     <header></header>    
@@ -97,56 +97,253 @@
           <!-- end -->
     </nav>
     <main>
-        <section>
-            <div class="sc" id="sc-1">
-                <button class="sc-i">
-                    <img onclick="bigger('#sc-1')">
+        <section class='d-flex flex-wrap' id="sc-c">
+            <div class="sc col-12 col-md-6 col-xl-4" id="sc-1">
+                <button class="sc-i" id="sc-1-i">
+                    <img onclick="grow('#sc-1-i', '#sc-1-t')">
                 </button>
-                <div class="sc-t"></div>
+                <div class="sc-t" id="sc-1-t">
+                    <div class="d-flex flex-shrink-0 sc-t-header">
+                        <div class="sc-t-name text-center text-truncate" id="sc-t-h-1">Lavado de alfombra</div>
+                        <div class="sc-t-icon">O</div>
+                    </div>
+                    <div class="sc-t-body text-justify text-wrap d-block text-truncate" id="sc-t-b-1"> Nuestros servicio de lavado de alombra es excelente para aquellos que quieren las cosas a su modo. (Excelente y rapido)</div>
+                    <div class="sc-t-link text-right">
+                        <button type="button" data-toggle="modal" data-target="#sc-1-modal" class="sc-modal" id="sc-1-modal-b" >
+                            Ver mas
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="sc" id="sc-2">
-                <div class="sc-i"></div>
-                <div class="sc-t"></div>
+            <!-- Modal 1 -->
+            <div class="modal fade m-s" id="sc-1-modal" tabindex="-1" aria-labelledby="sc-1-modalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered m-i-fix">
+                <div class="modal-content">
+                    <div class="sc-x-modal-xs">
+                        <div>video player</div>
+                        <div>informacion del servicio</div>
+                        <div>opcion para cotizar</div>
+                    </div>
+                    <div class="sc-x-modal-sm">
+                        <div>video player</div>
+                        <div>informacion del servicio</div>
+                        <div>opcion para cotizar</div>
+                    </div>
+                    <div class="sc-x-modal-md">
+                        <div>video player</div>
+                        <div>informacion del servicio</div>
+                        <div>opcion para cotizar</div>
+                    </div>
+                    <div class="sc-x-modal-l">
+                        <div>video player</div>
+                        <div>informacion del servicio</div>
+                        <div>opcion para cotizar</div>
+                    </div>
+                    <div class="sc-x-modal-xl">
+                        <div>video player</div>
+                        <div>informacion del servicio</div>
+                        <div>opcion para cotizar</div>
+                    </div>
+                </div>
+                </div>
             </div>
-            <div class="sc" id="sc-3">
-                <div class="sc-i"></div>
-                <div class="sc-t"></div>
+            <!-- end of Modal 1 -->
+            <div class="sc sc-m col-12 col-md-6 col-xl-4" id="sc-2">
+                <button class="sc-i" id="sc-2-i">
+                    <img onclick="grow('#sc-2-i', '#sc-2-t')">
+                </button>
+                <div class="sc-t" id="sc-2-t">
+                    <div class="d-flex flex-shrink-0 sc-t-header">
+                        <div class="sc-t-name text-center text-truncate" id="sc-t-h-2">Titulo</div>
+                        <div class="sc-t-icon">O</div>
+                    </div>
+                    <div class="sc-t-body text-justify text-wrap d-block text-truncate" id="sc-t-b-2">Descripcion</div>
+                    <div class="sc-t-link text-right">
+                        <a href="#">
+                            Ver mas
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="sc" id="sc-4">
-                <div class="sc-i"></div>
-                <div class="sc-t"></div>
+            <!-- Modal 2 -->
+            <div>
+
             </div>
-            <div class="sc" id="sc-5">
-                <div class="sc-i"></div>
-                <div class="sc-t"></div>
+            <!-- end of Modal 2 -->
+            <div class="sc col-12 col-md-6 col-xl-4" id="sc-3">
+                <button class="sc-i" id="sc-3-i">
+                    <img onclick="grow('#sc-3-i', '#sc-3-t')">
+                </button>
+                <div class="sc-t" id="sc-3-t">
+                    <div class="d-flex flex-shrink-0 sc-t-header">
+                        <div class="sc-t-name text-center text-truncate" id="sc-t-h-3">Titulo</div>
+                        <div class="sc-t-icon">O</div>
+                    </div>
+                    <div class="sc-t-body text-justify text-wrap d-block text-truncate" id="sc-t-b-3">Descripcion</div>
+                    <div class="sc-t-link text-right">
+                        <a href="#">
+                            Ver mas
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="sc" id="sc-6">
-                <div class="sc-i"></div>
-                <div class="sc-t"></div>
+            <!-- Modal 3 -->
+            <div>
+
             </div>
-            <div class="sc" id="sc-7">
-                <div class="sc-i"></div>
-                <div class="sc-t"></div>
+            <!-- end of Modal 3 -->
+            <div class="sc col-12 col-md-6 col-xl-4" id="sc-4">
+                <button class="sc-i" id="sc-4-i">
+                    <img onclick="grow('#sc-4-i', '#sc-4-t')">
+                </button>
+                <div class="sc-t" id="sc-4-t">
+                    <div class="d-flex flex-shrink-0 sc-t-header">
+                        <div class="sc-t-name text-center text-truncate" id="sc-t-h-4">Titulo</div>
+                        <div class="sc-t-icon">O</div>
+                    </div>
+                    <div class="sc-t-body text-justify text-wrap d-block text-truncate" id="sc-t-b-4">Descripcion</div>
+                    <div class="sc-t-link text-right">
+                        <a href="#">
+                            Ver mas
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="sc" id="sc-8">
-                <div class="sc-i"></div>
-                <div class="sc-t"></div>
+            <div class="sc col-12 col-md-6 col-xl-4" id="sc-5">
+                <button class="sc-i" id="sc-5-i">
+                    <img onclick="grow('#sc-5-i', '#sc-5-t')">
+                </button>
+                <div class="sc-t" id="sc-5-t">
+                    <div class="d-flex flex-shrink-0 sc-t-header">
+                        <div class="sc-t-name text-center text-truncate" id="sc-t-h-5">Titulo</div>
+                        <div class="sc-t-icon">O</div>
+                    </div>
+                    <div class="sc-t-body text-justify text-wrap d-block text-truncate" id="sc-t-b-5">Descripcion</div>
+                    <div class="sc-t-link text-right">
+                        <a href="#">
+                            Ver mas
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="sc" id="sc-9">
-                <div class="sc-i"></div>
-                <div class="sc-t"></div>
+            <div class="sc col-12 col-md-6 col-xl-4" col-xl-4 id="sc-6">
+                <button class="sc-i" id="sc-6-i">
+                    <img onclick="grow('#sc-6-i', '#sc-6-t')">
+                </button>
+                <div class="sc-t" id="sc-6-t">
+                    <div class="d-flex flex-shrink-0 sc-t-header">
+                        <div class="sc-t-name text-center text-truncate" id="sc-t-h-6">Titulo</div>
+                        <div class="sc-t-icon">O</div>
+                    </div>
+                    <div class="sc-t-body text-justify text-wrap d-block text-truncate" id="sc-t-b-6">Descripcion</div>
+                    <div class="sc-t-link text-right">
+                        <a href="#">
+                            Ver mas
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="sc" id="sc-10">
-                <div class="sc-i"></div>
-                <div class="sc-t"></div>
+            <div class="sc col-12 col-md-6 col-xl-4" id="sc-7">
+                <button class="sc-i" id="sc-7-i">
+                    <img onclick="grow('#sc-7-i', '#sc-7-t')">
+                </button>
+                <div class="sc-t" id="sc-7-t">
+                    <div class="d-flex flex-shrink-0 sc-t-header">
+                        <div class="sc-t-name text-center text-truncate" id="sc-t-h-7">Titulo</div>
+                        <div class="sc-t-icon">O</div>
+                    </div>
+                    <div class="sc-t-body text-justify text-wrap d-block text-truncate" id="sc-t-b-7">Descripcion</div>
+                    <div class="sc-t-link text-right">
+                        <a href="#">
+                            Ver mas
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="sc" id="sc-11">
-                <div class="sc-i"></div>
-                <div class="sc-t"></div>
+            <div class="sc col-12 col-md-6 col-xl-4" id="sc-8">
+                <button class="sc-i" id="sc-8-i">
+                    <img onclick="grow('#sc-8-i', '#sc-8-t')">
+                </button>
+                <div class="sc-t" id="sc-3-t">
+                    <div class="d-flex flex-shrink-0 sc-t-header">
+                        <div class="sc-t-name text-center text-truncate" id="sc-t-h-8">Titulo</div>
+                        <div class="sc-t-icon">O</div>
+                    </div>
+                    <div class="sc-t-body text-justify text-wrap d-block text-truncate" id="sc-t-b-8">Descripcion</div>
+                    <div class="sc-t-link text-right">
+                        <a href="#">
+                            Ver mas
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="sc" id="sc-12">
-                <div class="sc-i"></div>
-                <div class="sc-t"></div>
+            <div class="sc col-12 col-md-6 col-xl-4" id="sc-9">
+                <button class="sc-i" id="sc-9-i">
+                    <img onclick="grow('#sc-9-i', '#sc-9-t')">
+                </button>
+                <div class="sc-t" id="sc-9-t">
+                    <div class="d-flex flex-shrink-0 sc-t-header">
+                        <div class="sc-t-name text-center text-truncate" id="sc-t-h-9">Titulo</div>
+                        <div class="sc-t-icon">O</div>
+                    </div>
+                    <div class="sc-t-body text-justify text-wrap d-block text-truncate" id="sc-t-b-9">Descripcion</div>
+                    <div class="sc-t-link text-right">
+                        <a href="#">
+                            Ver mas
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="sc col-12 col-md-6 col-xl-4" id="sc-10">
+                <button class="sc-i" id="sc-10-i">
+                    <img onclick="grow('#sc-10-i', '#sc-10-t')">
+                </button>
+                <div class="sc-t" id="sc-10-t">
+                    <div class="d-flex flex-shrink-0 sc-t-header">
+                        <div class="sc-t-name text-center text-truncate" id="sc-t-h-10">Titulo</div>
+                        <div class="sc-t-icon">O</div>
+                    </div>
+                    <div class="sc-t-body text-justify text-wrap d-block text-truncate" id="sc-t-b-10">Descripcion</div>
+                    <div class="sc-t-link text-right">
+                        <a href="#">
+                            Ver mas
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="sc sc-m col-12 col-md-6 col-xl-4" id="sc-11">
+                <button class="sc-i" id="sc-11-i">
+                    <img onclick="grow('#sc-11-i', '#sc-11-t')">
+                </button>
+                <div class="sc-t" id="sc-11-t">
+                    <div class="d-flex flex-shrink-0 sc-t-header">
+                        <div class="sc-t-name text-center text-truncate" id="sc-t-h-11">Titulo</div>
+                        <div class="sc-t-icon">O</div>
+                    </div>
+                    <div class="sc-t-body text-justify text-wrap d-block text-truncate" id="sc-t-b-11">Descripcion</div>
+                    <div class="sc-t-link text-right">
+                        <a href="#">
+                            Ver mas
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="sc col-12 col-md-6 col-xl-4" id="sc-12">
+                <button class="sc-i" id="sc-12-i">
+                    <img onclick="grow('#sc-12-i', '#sc-12-t')">
+                </button>
+                <div class="sc-t" id="sc-12-t">
+                    <div class="d-flex flex-shrink-0 sc-t-header">
+                        <div class="sc-t-name text-center text-truncate" id="sc-t-h-12">Titulo</div>
+                        <div class="sc-t-icon">O</div>
+                    </div>
+                    <div class="sc-t-body text-justify text-wrap d-block text-truncate" id="sc-t-b-12">Descripcion</div>
+                    <div class="sc-t-link text-right">
+                        <a href="#">
+                            Ver mas
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 

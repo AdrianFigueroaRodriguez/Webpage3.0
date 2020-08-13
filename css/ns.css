@@ -30,12 +30,12 @@ nav{
 
 main{
     width: auto;
+        min-width: 220px;
     flex: 1 1 auto;
-    transition: all 1s ease-in-out 0s;
     background-color: transparent;
-    min-width: 220px;
     position: static;
     padding: 26px;
+    transition: all 1s ease-in-out 0s;
 }
 
 section {
@@ -78,22 +78,23 @@ img{
 /* Bootstrap class adjustments*/
 .container{
     width: auto;
+        min-width: 220px;
     height: 100%;
     display: flex;
     flex-flow: column;
     background-image: url("/Assets/IS-Background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: left;
     transition: all 1s ease-in-out 0s;
-    min-width: 220px;
+    
 }
 
 .py-4{
     padding: 0px !important;
 }
 
-.row, .col-lg-6, .col-6, p, .col-lg-12{
+.row, .col-lg-6, .col-6, p, .col-12, .col-lg-12, .col-sm-4{
     padding: 0px;
     margin: 0px;
     position: static;
@@ -115,6 +116,8 @@ img{
 .modal-dialog-centered{
     min-height: 100%;
 }
+
+
 
 /* navbar - main logo - container*/
 .n-ml-c{
@@ -178,32 +181,102 @@ nav div button img{
     position: static;
 }
 
+/* nuestros servicios - service card */
 .sc{
-    background-color: white;
-    height: 373px;
-    width: 100%;
+    min-height: 373px;
+    min-width: 188px;
     margin-bottom: 26px;
 }
 
 .sc-i{
-    height: 173px;
+    height: 200px;
     width: 100%;
     background-color: pink;
+    /*background-image: url('/Assets/');*/
 }
 
 .sc-i img{
     width: -moz-available;
     height: 100%;
     background-color: green;
+    /*background-image: url('/Assets/');*/
     border: none;
 }
 
 .sc-t{
-    height: 168px;
+    height: 173px;
     width: auto;
-    background-color: purple;
-    margin: 16px;
+    background-color: white;
+    padding: 16px;
 }
+
+.sc-t-header{
+    height: 23px;
+    background-color: transparent;
+    margin-bottom: 16px;
+}
+
+.sc-t-name{
+    height: 23px;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 16px;
+}
+
+.sc-t-icon{
+    max-width: 23px;
+    min-width: 23px;
+    min-height: 23px;
+    max-height: 23px;
+}
+
+.sc-t-body{
+    height: 72px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.sc-t-link{
+    height: 23px;
+    width: 100%;
+    margin-top: 7px;
+}
+
+.sc-modal{
+    color: black;
+    min-width: auto;
+    padding: 0px 5px;
+}
+
+.sc-x-modal-xs{
+    visibility: collapse;
+}
+
+.sc-x-modal-sm{
+    visibility: collapse;
+}
+
+.sc-x-modal-md{
+    visibility: collapse;
+}
+
+.sc-x-modal-l{
+    visibility: collapse;
+}
+
+.sc-x-modal-xl{
+    visibility: collapse;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -314,6 +387,21 @@ nav div button img{
         visibility: hidden;
     }
 
+    #sc-c{
+        min-width: 100%;
+    }
+
+    .sc-x-modal-xs{
+        visibility: visible;
+    }
+
+
+
+
+
+
+
+
     #ftcsArrowContainer{
         padding: 0px;
         height: 0px;
@@ -382,6 +470,15 @@ nav div button img{
 
     .cci{
         background-position: top !important;
+    }
+
+    /* nuestros servicios - service card - 1 a 12 */
+    #sc-1, #sc-3, #sc-5, #sc-7, #sc-9, #sc-11{
+        padding-right: 13px;
+    }
+    
+    #sc-2, #sc-4, #sc-6, #sc-8, #sc-10, #sc-12 {
+        padding-left: 13px;
     }
 
 
@@ -461,7 +558,7 @@ nav div button img{
     }
 
     body{
-        max-height: 2250px;;
+        
         max-width: none;
     }
 
@@ -477,6 +574,17 @@ nav div button img{
     #n-ns-sc1{
         transition: all 1s ease-in-out 0s;
     }
+
+
+    /* nuestros servicios - cartas de servicio - 1 a 12 */
+    #sc-1, #sc-3, #sc-5, #sc-7, #sc-9, #sc-11{
+        padding-right: 13px;
+    }
+    
+    #sc-2, #sc-4, #sc-6, #sc-8, #sc-10, #sc-12 {
+        padding-left: 13px;
+    }
+    
 
     #ftcsArrowContainer{
         padding-left: 49.6px;
@@ -496,6 +604,20 @@ nav div button img{
 
 /* extra large devices (extra large desktops, 1200px and up)*/
 @media (min-width: 1200px){
+    #sc-1, #sc-4, #sc-7, #sc-10 {
+        padding-right: 13px;
+    }
+    
+    #sc-2, #sc-5, #sc-8, #sc-11{
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    #sc-3, #sc-6, #sc-9, #sc-12{
+        padding-left: 13px;
+    }
+
+
     #ftcsArrowContainer{
         padding-left: 64.65px;
         padding-right: 0px;
