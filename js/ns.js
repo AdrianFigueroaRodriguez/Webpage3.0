@@ -72,33 +72,18 @@ function cardImgExpand(x){
     }
 }
 
-function grow(x,y){
-    if($('#sc-1-b').prop('clientHeight') === 173){
-        $(`${x}`).css('height', '373px');
-        $(`${y}`).css('visibility', 'collapse');
+function serviceCardImageExpansionXS(image,text){    
+    if($(`${image}`).prop('clientHeight') === 200){
+        $(`${image}`).css('height', '373px');
+        $(`${text}`).css('visibility', 'collapse');
+        $(`${text}`).css('height', '0px');
+        $(`${text}`).css('padding', '0px ');
     } else{
-        $(`${x}`).css('height', '173px');
-        $(`${y}`).css('visibility', 'visible');
+        $(`${image}`).css('height', '200');
+        $(`${text}`).css('visibility', 'visible');
+        $(`${text}`).css('height', '173px');
+        $(`${text}`).css('padding', '16px');
     }
-/*
-    if($(`${x} .sc-i`).prop('clientHeight') === 173){
-        $(`${x} .sc-i`).css('height', '373px');
-        $(`${x} .sc-i`).css('visibility', 'collapse');
-    } else{
-        $(`${x} .sc-i`).css('height', '173px');
-        $(`${x} .sc-i`).css('visibility', 'visible');
-    }
-*/
-
-/*
-    if($(`${x} .sc-i`).prop('clientHeight') === 173){
-        $(`${x} .sc-i`).css('height', '373px');
-        $(`${x} .sc-t`).css('visibility', 'collapse');
-    } else{
-        $(`${x} .sc-i`).css('height', '173px');
-        $(`${x} .sc-t`).css('visibility', 'visible');
-    }
-*/
 }
 
 
