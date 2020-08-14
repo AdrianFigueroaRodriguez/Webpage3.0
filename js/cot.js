@@ -1,39 +1,4 @@
 console.log('ns Js is conected');
-//main container
-$('#m-c').hide();
-$('footer').hide();
-
-//start transition
-setTimeout(function(){
-    $('.container').css('background-position', 'right');
-}, 1000);
-
-//initial screen transition
-setTimeout(function(){
-    $('nav').css('background-color', '#2699FB');
-    $('nav').css('border-bottom', '#ffffff solid 10px');
-    $('#m-is-l').css('opacity', '0.001%');
-    $('#m-is-s').css('opacity', '0.001%');
-    $('.n-ml-c').css('opacity', '100%');
-    $('.n-o-c').css('opacity', '100%');
-}, 2000);
-
-//main screen setup
-setTimeout(function(){
-    //main - initial screen and 
-    $('#m-is-c').hide();
-    $('#m-c').show();
-    $('footer').show();
-    //footer config adjustment
-    $('footer').css('flex', '0 1 240px');
-    $('.ft-c-s').css('height', '190px');
-    $('.ft-c-i').css('height', '50px');
-    //html/body config adjustment
-    $('html').css('padding-bottom', '0px');
-    $('body').css('padding-bottom', '0px');
-    $('html').css('height', 'auto');
-    $('body').css('height', 'auto');
-}, 3000);
 
 function nmc(){
     if($('.n-m-c').is(':visible')){
@@ -45,4 +10,63 @@ function ndc(){
     if($('.n-m-c').is(':visible')){
         $('.n-m-c').css('visibility', 'visible');
     }
+}
+
+function cotNewServiceAdder(){    
+    if($('.cot-s2').prop('clientHeight') === 0){
+        $('.cot-s2').css('visibility', 'visible');
+        $('.cot-s2').css('height', '38px');
+        $('.cot-s2').css('margin', '16px 0px');
+
+        $('.cot-new-serv-rem').css('padding', '5px 0px');
+        $('.cot-new-serv-rem').css('margin', '16px 0px');
+        $('.cot-new-serv-rem').css('height', '38px');
+        $('.cot-new-serv-rem').css('visibility', 'visible');
+
+    } else if($('.cot-s3').prop('clientHeight') === 0){
+        $('.cot-s3').css('visibility', 'visible');
+        $('.cot-s3').css('height', '38px');
+        $('.cot-s3').css('margin', '16px 0px');
+    } else if($('.cot-s4').prop('clientHeight') === 0){
+        $('.cot-s4').css('visibility', 'visible');
+        $('.cot-s4').css('height', '38px');
+        $('.cot-s4').css('margin', '16px 0px');
+    } else if($('.cot-s5').prop('clientHeight') === 0 ){
+        $('.cot-s5').css('visibility', 'visible');
+        $('.cot-s5').css('height', '38px');
+        $('.cot-s5').css('margin', '16px 0px');
+    } else{
+        $('.cot-s6').css('visibility', 'visible');
+        $('.cot-s6').css('height', '38px');
+        $('.cot-s6').css('margin', '16px 0px');
+    }
+}
+
+function cotNewServiceEliminator(){
+    if($('.cot-s6').prop('clientHeight') === 38){
+        $('.cot-s6').css('visibility', 'collapse');
+        $('.cot-s6').css('height', '0px');
+        $('.cot-s6').css('margin', '0px');
+    } else if($('.cot-s5').prop('clientHeight') === 38){
+        $('.cot-s5').css('visibility', 'collapse');
+        $('.cot-s5').css('height', '0px');
+        $('.cot-s5').css('margin', '0px');
+    } else if($('.cot-s4').prop('clientHeight') === 38){
+        $('.cot-s4').css('visibility', 'collapse');
+        $('.cot-s4').css('height', '0px');
+        $('.cot-s4').css('margin', '0px');
+    } else if($('.cot-s3').prop('clientHeight') === 38){
+        $('.cot-s3').css('visibility', 'collapse');
+        $('.cot-s3').css('height', '0px');
+        $('.cot-s3').css('margin', '0px');
+    } else if($('.cot-s2').prop('clientHeight') === 38){
+        $('.cot-s2').css('visibility', 'collapse');
+        $('.cot-s2').css('height', '0px');
+        $('.cot-s2').css('margin', '0px');
+
+        $('.cot-new-serv-rem').css('padding', '0px');
+        $('.cot-new-serv-rem').css('margin', '0px');
+        $('.cot-new-serv-rem').css('height', '0px');
+        $('.cot-new-serv-rem').css('visibility', 'collapse');
+    } 
 }

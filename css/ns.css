@@ -398,6 +398,10 @@ nav div button img{
         min-width: 100%;
     }
 
+    .m-s{
+        padding: 80px 26px 26px 26px !important;
+    }
+
     .sc-x-modal{
         visibility: visible;
     }
@@ -409,6 +413,7 @@ nav div button img{
     .sc-x-modal-is{
         padding: 16px;
     }
+
     .sc-x-modal-cot{
         padding: 0px 16px 16px 16px;
     }
@@ -418,8 +423,17 @@ nav div button img{
         padding: 5px 0px;
     }
     
-    .m-s{
-        padding: 80px 26px 26px 26px !important;
+    .sc-x-modal-is-header{
+        margin-bottom: 16px;
+    }
+
+    .sc-x-modal-is-descripcion{
+        margin-bottom: 26px;
+    }
+
+    .sc-x-modal-is-info-adicional{
+        /*pendiente de ver que informacion agregar*/
+        margin: 16px 0px;
     }
 
 

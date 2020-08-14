@@ -1,10 +1,10 @@
 /* Tag adjustments*/ 
 html, body{
     width: auto;
-    height: 100%; /*Change for size change in height*/
+    height: auto; /*Change for size change in height*/
     min-height: 650px;
     box-sizing: border-box;
-    background-color: #fff8e7;
+    background-color: #ffffff;
     padding-bottom: 26px;
     transition: all 1s ease-in-out 0s;
 }
@@ -17,23 +17,25 @@ header{
 nav{
     width: 100%;
     flex: 0 1 70px;
-    background-color: transparent; /* #2699FB;*/
+    background-color: #2699FB;
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
     transition: all 1s ease-in-out 0s;
     display: flex;
-    border-top: #ffffff solid 26px;
+    border-top: #ffffff solid 0px;
+    border-bottom: #ffffff solid 10px;
     min-width: 220px;
 }
 
 main{
     width: auto;
+        min-width: 220px;
     flex: 1 1 auto;
-    transition: all 1s ease-in-out 0s;
     background-color: transparent;
-    min-width: 220px;
     position: static;
+    padding: 26px;
+    transition: all 1s ease-in-out 0s;
 }
 
 section {
@@ -46,9 +48,10 @@ section {
 
 footer{
     width: auto;
-    flex: 0 1 0px; /*0 1 240px*/
-    background-color: transparent;
+    flex: 0 1;
+    background-color: #7FC4FD;
     min-width: 220px;
+
 }
 
 div{
@@ -75,22 +78,23 @@ img{
 /* Bootstrap class adjustments*/
 .container{
     width: auto;
+        min-width: 220px;
     height: 100%;
     display: flex;
     flex-flow: column;
     background-image: url("/Assets/IS-Background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: left;
     transition: all 1s ease-in-out 0s;
-    min-width: 220px;
+    
 }
 
 .py-4{
     padding: 0px !important;
 }
 
-.row, .col-lg-6, .col-6, p, .col-lg-12{
+.row, .col-lg-6, .col-6, p, .col-12, .col-lg-12, .col-md-5, .col-md-7,.col-sm-4{
     padding: 0px;
     margin: 0px;
     position: static;
@@ -109,20 +113,22 @@ img{
     border: none;
 }
 
+.modal-backdrop.show{
+    opacity: .8;
+}
 .modal-dialog-centered{
-    min-height: 100%;
+    align-items: flex-start;
 }
 
-#exampleModal{
-    margin: auto;
-    padding: 0px 20px !important;
+.w-100{
+    max-height: 600px;
 }
 
 /* navbar - main logo - container*/
 .n-ml-c{
     padding: 2.5px 40px 2.5px 26px;
     transition: all 1s ease-in-out 0s;
-    opacity: 0.001%;
+    opacity: 100%;
 }
 
 /* navbar- main logo - container - image*/
@@ -135,7 +141,7 @@ nav div button img{
 .n-o-c{
     display: flex;
     transition: all 1s ease-in-out 0s;
-    opacity: 0.001%;
+    opacity: 100%;
 }
 
 /* navbar - options - container - items*/
@@ -175,29 +181,102 @@ nav div button img{
     color: #ffffff;
 }
 
-/* main - container*/
-#m-c{
-    position: static;
+/**/
+.cotLbls{
+    width: 100%;
+    color: white;
+    transition: all .3s ease-in-out 0s;
 }
 
+.cotInput{
+    width:100%;
+    margin-bottom: 16px;
+    transition: all .3s ease-in-out 0s;
+}
 
+.calendario-c{
+    width: 100%;
+    height: 452px;
+    margin-bottom: 16px;
+    transition: all .3s ease-in-out 0s;
+}
+
+.calendario{
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    transition: all .3s ease-in-out 0s;
+}
+
+.cot-serv-btn{
+    transform: translate3d(0px, 58px, 0px) !important;
+    width: 100%;
+    transition: all 1s ease-in-out 0s;
+}
+
+.cot-serv-cant-btn{
+    transform: translate3d(0px, 58px, 0px) !important;
+    left: -105px !important;
+    width: 100%;
+    transition: all 1s ease-in-out 0s;
+}
+
+#cont-serv-cant-text{
+    width: 100%;
+    transition: all 1s ease-in-out 0s;
+}
+
+.cot-s{
+    visibility: collapse;
+    height: 0px;
+
+}
+
+.cot-s1{
+    visibility: visible;
+    height: 38px;
+    transition: all .2s ease-in-out 0s;
+}
+
+.cot-new-serv-add{
+    padding: 5px 0px;
+    margin: 16px 0px;
+    background-color: white;
+    color: #2699FB;
+
+}
+
+.cot-new-serv-rem{
+    padding: 0px !;
+    margin: 0px;
+    height: 0px;
+    visibility: collapse;
+    background-color: white;
+    color: #2699FB;
+}
+/**/
 
 
 
 /* footer - contenedor - superior*/
 .ft-c-s{
     width: auto;
-    height: 0px; /*190px */
+    height: auto;
     background-color: #7FC4FD;
     transition: all 1s ease-in-out 0s;
-    padding: 26px;
+    margin: 26px;
     font-size: small;
     color: #ffffff;
 }
 
 /* header superior - h5 */
-.hs h5{
+.hs{
+    margin: 1rem 0rem;
+}
+
+.hs h6{
     width: 100%;
+    margin: .5rem 0rem;
 }
 
 /* header superior - p*/
@@ -207,7 +286,7 @@ nav div button img{
 
 /* .ft-c-s .dir*/
 .dir{
-    min-width: 205.5px;
+    
     width: 100%;
 }
 
@@ -217,18 +296,24 @@ nav div button img{
 }
 
 #ftcsArrowContainer{
-    visibility: hidden;
-    height: 0px;
+    height: auto;
 }
 
 #ftcsArrowContainer button{
     height: 0px;
+    max-width: 26px;
 }
+
+#ftcsArrow{
+    max-width: 26px;
+    height: auto;
+}
+
 
 /* footer - contenedor - inferior*/
 .ft-c-i{
     width: auto;
-    height: 0px; /*50px*/
+    height: 50px;
     background-color: #2699FB;
     transition: all 1s ease-in-out 0s;
 }
@@ -248,3 +333,207 @@ nav div button img{
 }
 
 
+
+/* XSmall devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) { 
+    nav div div div{
+        display: none;
+    }
+
+    #navbarNavAltMarkup2{
+        display: none;
+    }
+    /**/
+
+    /* */
+
+    #ftcsArrowContainer{
+        padding: 0px;
+        height: 0px;
+    }
+
+}
+
+/* navbarNavAltMarkup media tag especial*/ 
+/* No usar al menos de que sea para este elemento*/
+@media screen and (min-width: 767.1px){
+    .nNAM2{
+        display: none;
+    }
+}
+
+/* Small devices (tablets, 768px and up)*/
+@media (min-width: 576.001px) and (max-width: 768px) { 
+    nav div div div{
+        display: none;
+    }
+
+    #navbarNavAltMarkup2{
+        display: none;
+    }
+
+    /**/
+    .cotLbls{
+        width: 100%;
+        color: white;
+    }
+
+    .cotInput{
+        width:100%;
+        margin-bottom: 16px;
+    }
+
+    .calendario{
+        width: 100%;
+        height: 500px;
+        background-color: grey;
+        margin-bottom: 16px;
+    }
+
+    .cot-serv-btn{
+        transform: translate3d(0px, 58px, 0px) !important;
+        width: 100%;
+    }
+
+    .cot-serv-cant-btn{
+        transform: translate3d(0px, 58px, 0px) !important;
+        left: -105px !important;
+        width: 100%;
+    }
+
+    #cont-serv-cant-text{
+        width: 100%;
+    }
+
+    .cot-s{
+        visibility: collapse;
+        height: 0px;
+    }
+
+    .cot-s1{
+        visibility: visible;
+        height: 38px;
+    }
+
+    .cot-new-serv-add{
+        padding: 5px 0px;
+        margin: 16px 0px;
+        background-color: white;
+        color: #2699FB;
+    }
+
+    /* */
+
+
+}
+
+/* Medium devices (desktops, 992px and up)*/
+@media (min-width: 768.001px) and (max-width: 992px) {
+    .n-o-c-i{
+        padding-right: 30px;
+    }
+    
+    .nNAM2{
+        display: none;
+    }
+
+    .m-ns-sc1{
+        padding-bottom: 26px;
+    }
+
+    .calendario-c{
+        padding-left: 26px;
+    }
+
+
+
+    /* footer arrow*/
+    #ftcsArrowContainer{
+        padding-left: 29.65px;
+        padding-right: 0px;
+    }
+
+    #ftcsArrowContainer button{
+        height: auto;
+        max-width: 26px;
+    }
+
+    #ftcsArrow{
+        max-width: 26px;
+    }
+}
+
+/* large devices (large desktops, 992px to 1200px)*/
+@media (min-width: 992.001px) and (max-width: 1200px){ 
+    .nNAM2{
+        display: none;
+    }
+
+    .m-ns-sc2{
+        padding-left: 26px;
+    }
+    
+
+
+    .modal-backdrop, .fade .show {
+        opacity: 100%;
+        position: static;
+        background-color: transparent;
+        transition: none;
+        overflow: auto;
+    }
+
+    body{
+        
+        max-width: none;
+    }
+
+    .modal-open{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    #n-ns-sc1{
+        transition: all 1s ease-in-out 0s;
+    }
+
+    /* */ 
+
+
+
+    /* */
+
+    #ftcsArrowContainer{
+        padding-left: 49.6px;
+        padding-right: 0px;
+    }
+
+    #ftcsArrowContainer button{
+        height: auto;
+        max-width: 26px;
+    }
+
+    #ftcsArrow{
+        max-width: 26px;
+    }
+
+}
+
+/* extra large devices (extra large desktops, 1200px and up)*/
+@media (min-width: 1200px){
+
+
+    #ftcsArrowContainer{
+        padding-left: 64.65px;
+        padding-right: 0px;
+    }
+
+    #ftcsArrowContainer button{
+        height: auto;
+        max-width: 26px;
+    }
+
+    #ftcsArrow{
+        max-width: 26px;
+    }
+} 
