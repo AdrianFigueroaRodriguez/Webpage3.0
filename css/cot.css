@@ -59,7 +59,7 @@ div{
 }
 
 button{
-    min-width: 100%;
+    width: 100%;
     background-color: transparent;
     border: 0px;
     padding: 0px;
@@ -94,7 +94,7 @@ img{
     padding: 0px !important;
 }
 
-.row, .col-lg-6, .col-6, p, .col-12, .col-lg-12, .col-md-5, .col-md-7,.col-sm-4{
+.row, .col-lg-6, .col-6, p, .col-12, .col-lg-12, .col-md-5, .col-md-7,.col-sm-4, .col-xl-4, .col-xl-3, .dropdown, .w-100{
     padding: 0px;
     margin: 0px;
     position: static;
@@ -192,12 +192,13 @@ nav div button img{
     width:100%;
     margin-bottom: 16px;
     transition: all .3s ease-in-out 0s;
+    border-radius: 20px;
+    border: none;
 }
 
 .calendario-c{
     width: 100%;
-    height: 452px;
-    margin-bottom: 16px;
+    height: 100%;
     transition: all .3s ease-in-out 0s;
 }
 
@@ -253,6 +254,14 @@ nav div button img{
     visibility: collapse;
     background-color: white;
     color: #2699FB;
+}
+
+#cot-btn-cotizar{
+    background-color: white;
+    color: #2699FB;
+    border-radius: 20px;
+    padding: 5px 0px;
+    margin-top: 16px;
 }
 /**/
 
@@ -344,6 +353,16 @@ nav div button img{
         display: none;
     }
     /**/
+    .calendario-c{
+        width: 100%;
+        height: 500px;
+        margin-bottom: 16px;
+    }
+
+    .calendario{
+        width: auto;
+        height: 100%;
+    }
 
     /* */
 
@@ -429,6 +448,11 @@ nav div button img{
 
 /* Medium devices (desktops, 992px and up)*/
 @media (min-width: 768.001px) and (max-width: 992px) {
+    html,body{
+        height: 100%;
+        padding-bottom: 0px;
+    }
+
     .n-o-c-i{
         padding-right: 30px;
     }
@@ -441,11 +465,15 @@ nav div button img{
         padding-bottom: 26px;
     }
 
+    /**/
+    .d-md-flex{
+        margin-bottom: 26px;
+    }
+
     .calendario-c{
         padding-left: 26px;
     }
-
-
+    /**/
 
     /* footer arrow*/
     #ftcsArrowContainer{
@@ -464,7 +492,13 @@ nav div button img{
 }
 
 /* large devices (large desktops, 992px to 1200px)*/
-@media (min-width: 992.001px) and (max-width: 1200px){ 
+@media (min-width: 992.001px) and (max-width: 1200px){
+    html,body{
+        height: auto !important;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
     .nNAM2{
         display: none;
     }
@@ -473,8 +507,6 @@ nav div button img{
         padding-left: 26px;
     }
     
-
-
     .modal-backdrop, .fade .show {
         opacity: 100%;
         position: static;
@@ -498,9 +530,17 @@ nav div button img{
     }
 
     /* */ 
+    .d-md-flex{
+        margin-bottom: 26px;
+    }
 
+    .calendario-c{
+        padding-left: 26px;
+    }    
 
-
+    .col-xl-3{
+        display: block
+    }
     /* */
 
     #ftcsArrowContainer{
@@ -521,7 +561,30 @@ nav div button img{
 
 /* extra large devices (extra large desktops, 1200px and up)*/
 @media (min-width: 1200px){
+    html,body{
+        height: 100%;
+        padding-bottom: 0px;
+    }
+    /**/
+    .calendario-c{
+        padding-left: 26px;
+    }
 
+    .calendario{
+        background-color: yellow;
+    }
+   
+    .col-xl-3{
+        margin-left: 26px;
+    }
+
+    .col-xl-4{
+        margin-left: 26px;
+    }
+
+    
+
+    /**/
 
     #ftcsArrowContainer{
         padding-left: 64.65px;

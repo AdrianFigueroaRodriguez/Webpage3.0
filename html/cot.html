@@ -97,230 +97,235 @@
           <!-- end -->
     </nav>
     <main>
-      <section class="d-md-flex">
-        <!-- datos del cliente -->
-        <section class="col-12 col-sm-12 col-md-5 w-100 ">
-          <form>
-            <label for='nombre' class="cotLbls text-center">Nombre: </label> <br>
-            <input type='text' id='nombre-id' class="cotInput " name='nombre'><br>
-
-            <label for='nombre' class="cotLbls text-center">Correo: </label><br>
-            <input type='text' id='nombre-id' class="cotInput " name='nombre'><br>
-
-            <label for='nombre' class="cotLbls text-center">Telefono: </label><br>
-            <input type='text' id='nombre-id' class="cotInput" name='nombre'><br>
-
-            <label for='nombre' class="cotLbls text-center">Celular: </label><br>
-            <input type='text' id='nombre-id' class="cotInput" name='nombre'><br>
-
-            <label for='nombre' class="cotLbls text-center">Direccion: </label><br>
-            <input type='text' id='nombre-id' class="cotInput" name='nombre'><br>
-
-            <label for='nombre' class="cotLbls text-center">Colonia/Fraccionamiento/Privada: </label><br>
-            <input type='text' id='nombre-id' class="cotInput" name='nombre'><br>
-          </form>
-        </section>
-
-        <!-- calendario -->
-        <section class="col-md-7 flex-md-shrink-0">
-          <div class="calendario-c">
-            <div class="calendario">
-
+      <section class="d-xl-flex">
+        <section class="d-md-flex">
+          <!-- datos del cliente -->
+          <section class="col-12 col-sm-12 col-md-5 w-100 ">
+            <form>
+              <label for='nombre' class="cotLbls text-center">Nombre: </label> <br>
+              <input type='text' id='nombre-id' class="cotInput " name='nombre'><br>
+  
+              <label for='nombre' class="cotLbls text-center">Correo: </label><br>
+              <input type='email' id='nombre-id' class="cotInput " name='nombre'><br>
+  
+              <label for='nombre' class="cotLbls text-center">Telefono: </label><br>
+              <input type='text' id='nombre-id' class="cotInput" name='nombre'><br>
+  
+              <label for='nombre' class="cotLbls text-center">Celular: </label><br>
+              <input type='text' id='nombre-id' class="cotInput" name='nombre'><br>
+  
+              <label for='nombre' class="cotLbls text-center">Direccion: </label><br>
+              <input type='text' id='nombre-id' class="cotInput" name='nombre'><br>
+  
+              <label for='nombre' class="cotLbls text-center">Colonia/Fraccionamiento/Privada: </label><br>
+              <input type='text' id='nombre-id' class="cotInput" name='nombre'><br>
+            </form>
+          </section>
+  
+          <!-- calendario -->
+          <section class="col-md-7 flex-md-shrink-0">
+            <div class="calendario-c">
+              <div class="calendario">
+  
+              </div>
             </div>
+          </section>
+        </section>
+  
+        <!-- servicios -->
+        <section class='col-xl-3'>
+          <!-- opcion de agregar hasta 6 servicios -->
+          <div>
+            <!-- servicio 1-->
+            <div class="d-flex cot-s cot-s1 ">
+              <div class="dropdown w-100">
+                <button type="button" class="btn btn-secondary dropdown-toggle" id="cot-serv" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                  Elije un servicio
+                </button>
+                <div class="dropdown-menu cot-serv-btn" aria-labelledby="cot-serv">
+                  <a class="dropdown-item text-center" href="#">Lavado de alfombra</a>
+                  <a class="dropdown-item text-center" href="#">Lavado de sillones</a>
+                  <a class="dropdown-item text-center" href="#">Lavado de sillas</a>
+                </div>
+              </div>
+              <!-- change everything -->
+              <div class="dropdown ">
+                <button type="button" class="btn btn-secondary dropdown-toggle " id="cot-cant" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="">
+                  #
+                </button>
+                <div class="dropdown-menu cot-serv-cant-btn" aria-labelledby="cot-cant">
+                  <a class="dropdown-item text-center" href="#">1</a>
+                  <a class="dropdown-item text-center" href="#">2</a>
+                  <a class="dropdown-item text-center" href="#">3</a>
+                  <a class="dropdown-item text-center" href="#">4</a>
+                  <a class="dropdown-item text-center" href="#">5</a>
+                  <a class="dropdown-item text-center" href="#">
+                    <input type="text" id="cont-serv-cant-text">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- fin de servicio 1 -->
+            <!-- servicio 2-->
+            <div class="d-flex cot-s cot-s2">
+              <div class="dropdown w-100">
+                <button type="button" class="btn btn-secondary dropdown-toggle" id="cot-serv" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                  Elije un servicio
+                </button>
+                <div class="dropdown-menu cot-serv-btn" aria-labelledby="cot-serv">
+                  <a class="dropdown-item text-center" href="#">Lavado de alfombra</a>
+                  <a class="dropdown-item text-center" href="#">Lavado de sillones</a>
+                  <a class="dropdown-item text-center" href="#">Lavado de sillas</a>
+                </div>
+              </div>
+              <!-- change everything -->
+              <div class="dropdown ">
+                <button type="button" class="btn btn-secondary dropdown-toggle " id="cot-cant" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="">
+                  #
+                </button>
+                <div class="dropdown-menu cot-serv-cant-btn" aria-labelledby="cot-cant">
+                  <a class="dropdown-item text-center" href="#">1</a>
+                  <a class="dropdown-item text-center" href="#">2</a>
+                  <a class="dropdown-item text-center" href="#">3</a>
+                  <a class="dropdown-item text-center" href="#">4</a>
+                  <a class="dropdown-item text-center" href="#">5</a>
+                  <a class="dropdown-item text-center" href="#">
+                    <input type="text" id="cont-serv-cant-text">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- fin de servicio 2 -->
+            <!-- servicio 3 -->
+            <div class="d-flex cot-s cot-s3">
+              <div class="dropdown w-100">
+                <button type="button" class="btn btn-secondary dropdown-toggle" id="cot-serv" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                  Elije un servicio
+                </button>
+                <div class="dropdown-menu cot-serv-btn" aria-labelledby="cot-serv">
+                  <a class="dropdown-item text-center" href="#">Lavado de alfombra</a>
+                  <a class="dropdown-item text-center" href="#">Lavado de sillones</a>
+                  <a class="dropdown-item text-center" href="#">Lavado de sillas</a>
+                </div>
+              </div>
+              <!-- change everything -->
+              <div class="dropdown ">
+                <button type="button" class="btn btn-secondary dropdown-toggle " id="cot-cant" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="">
+                  #
+                </button>
+                <div class="dropdown-menu cot-serv-cant-btn" aria-labelledby="cot-cant">
+                  <a class="dropdown-item text-center" href="#">1</a>
+                  <a class="dropdown-item text-center" href="#">2</a>
+                  <a class="dropdown-item text-center" href="#">3</a>
+                  <a class="dropdown-item text-center" href="#">4</a>
+                  <a class="dropdown-item text-center" href="#">5</a>
+                  <a class="dropdown-item text-center" href="#">
+                    <input type="text" id="cont-serv-cant-text">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- fin de servicio 3 -->
+            <!-- servicio 4 -->
+            <div class="d-flex cot-s cot-s4">
+              <div class="dropdown w-100">
+                <button type="button" class="btn btn-secondary dropdown-toggle" id="cot-serv" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                  Elije un servicio
+                </button>
+                <div class="dropdown-menu cot-serv-btn" aria-labelledby="cot-serv">
+                  <a class="dropdown-item text-center" href="#">Lavado de alfombra</a>
+                  <a class="dropdown-item text-center" href="#">Lavado de sillones</a>
+                  <a class="dropdown-item text-center" href="#">Lavado de sillas</a>
+                </div>
+              </div>
+              <!-- change everything -->
+              <div class="dropdown ">
+                <button type="button" class="btn btn-secondary dropdown-toggle " id="cot-cant" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="">
+                  #
+                </button>
+                <div class="dropdown-menu cot-serv-cant-btn" aria-labelledby="cot-cant">
+                  <a class="dropdown-item text-center" href="#">1</a>
+                  <a class="dropdown-item text-center" href="#">2</a>
+                  <a class="dropdown-item text-center" href="#">3</a>
+                  <a class="dropdown-item text-center" href="#">4</a>
+                  <a class="dropdown-item text-center" href="#">5</a>
+                  <a class="dropdown-item text-center" href="#">
+                    <input type="text" id="cont-serv-cant-text">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- fin de servicio 4 -->
+            <!-- servicio 5 -->
+            <div class="d-flex cot-s cot-s5">
+              <div class="dropdown w-100">
+                <button type="button" class="btn btn-secondary dropdown-toggle" id="cot-serv" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                  Elije un servicio
+                </button>
+                <div class="dropdown-menu cot-serv-btn" aria-labelledby="cot-serv">
+                  <a class="dropdown-item text-center" href="#">Lavado de alfombra</a>
+                  <a class="dropdown-item text-center" href="#">Lavado de sillones</a>
+                  <a class="dropdown-item text-center" href="#">Lavado de sillas</a>
+                </div>
+              </div>
+              <!-- change everything -->
+              <div class="dropdown ">
+                <button type="button" class="btn btn-secondary dropdown-toggle " id="cot-cant" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="">
+                  #
+                </button>
+                <div class="dropdown-menu cot-serv-cant-btn" aria-labelledby="cot-cant">
+                  <a class="dropdown-item text-center" href="#">1</a>
+                  <a class="dropdown-item text-center" href="#">2</a>
+                  <a class="dropdown-item text-center" href="#">3</a>
+                  <a class="dropdown-item text-center" href="#">4</a>
+                  <a class="dropdown-item text-center" href="#">5</a>
+                  <a class="dropdown-item text-center" href="#">
+                    <input type="text" id="cont-serv-cant-text">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- fin de servicio 5 -->
+            <!-- servicio 6 -->
+            <div class="d-flex cot-s cot-s6">
+              <div class="dropdown w-100">
+                <button type="button" class="btn btn-secondary dropdown-toggle" id="cot-serv" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                  Elije un servicio
+                </button>
+                <div class="dropdown-menu cot-serv-btn" aria-labelledby="cot-serv">
+                  <a class="dropdown-item text-center" href="#">Lavado de alfombra</a>
+                  <a class="dropdown-item text-center" href="#">Lavado de sillones</a>
+                  <a class="dropdown-item text-center" href="#">Lavado de sillas</a>
+                </div>
+              </div>
+              <!-- change everything -->
+              <div class="dropdown ">
+                <button type="button" class="btn btn-secondary dropdown-toggle " id="cot-cant" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="">
+                  #
+                </button>
+                <div class="dropdown-menu cot-serv-cant-btn" aria-labelledby="cot-cant">
+                  <a class="dropdown-item text-center" href="#">1</a>
+                  <a class="dropdown-item text-center" href="#">2</a>
+                  <a class="dropdown-item text-center" href="#">3</a>
+                  <a class="dropdown-item text-center" href="#">4</a>
+                  <a class="dropdown-item text-center" href="#">5</a>
+                  <a class="dropdown-item text-center" href="#">
+                    <input type="text" id="cont-serv-cant-text">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- fin de servicio 6-->
           </div>
+          <!-- fin de opciona para agregar hasta 6 servicios -->
+          <button class="cot-new-serv-add" onclick="cotNewServiceAdder()">Agregar otro servicio</button>
+          <button class="cot-new-serv-rem" onclick="cotNewServiceEliminator()">Eliminar servicio</button>
+  
         </section>
       </section>
 
-      <!-- servicios -->
-      <section>
-        <!-- opcion de agregar hasta 6 servicios -->
-        <div>
-          <!-- servicio 1-->
-          <div class="d-flex cot-s cot-s1 ">
-            <div class="dropdown w-100">
-              <button type="button" class="btn btn-secondary dropdown-toggle" id="cot-serv" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                Elije un servicio
-              </button>
-              <div class="dropdown-menu cot-serv-btn" aria-labelledby="cot-serv">
-                <a class="dropdown-item text-center" href="#">Lavado de alfombra</a>
-                <a class="dropdown-item text-center" href="#">Lavado de sillones</a>
-                <a class="dropdown-item text-center" href="#">Lavado de sillas</a>
-              </div>
-            </div>
-            <!-- change everything -->
-            <div class="dropdown ">
-              <button type="button" class="btn btn-secondary dropdown-toggle " id="cot-cant" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="">
-                #
-              </button>
-              <div class="dropdown-menu cot-serv-cant-btn" aria-labelledby="cot-cant">
-                <a class="dropdown-item text-center" href="#">1</a>
-                <a class="dropdown-item text-center" href="#">2</a>
-                <a class="dropdown-item text-center" href="#">3</a>
-                <a class="dropdown-item text-center" href="#">4</a>
-                <a class="dropdown-item text-center" href="#">5</a>
-                <a class="dropdown-item text-center" href="#">
-                  <input type="text" id="cont-serv-cant-text">
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- fin de servicio 1 -->
-          <!-- servicio 2-->
-          <div class="d-flex cot-s cot-s2">
-            <div class="dropdown w-100">
-              <button type="button" class="btn btn-secondary dropdown-toggle" id="cot-serv" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                Elije un servicio
-              </button>
-              <div class="dropdown-menu cot-serv-btn" aria-labelledby="cot-serv">
-                <a class="dropdown-item text-center" href="#">Lavado de alfombra</a>
-                <a class="dropdown-item text-center" href="#">Lavado de sillones</a>
-                <a class="dropdown-item text-center" href="#">Lavado de sillas</a>
-              </div>
-            </div>
-            <!-- change everything -->
-            <div class="dropdown ">
-              <button type="button" class="btn btn-secondary dropdown-toggle " id="cot-cant" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="">
-                #
-              </button>
-              <div class="dropdown-menu cot-serv-cant-btn" aria-labelledby="cot-cant">
-                <a class="dropdown-item text-center" href="#">1</a>
-                <a class="dropdown-item text-center" href="#">2</a>
-                <a class="dropdown-item text-center" href="#">3</a>
-                <a class="dropdown-item text-center" href="#">4</a>
-                <a class="dropdown-item text-center" href="#">5</a>
-                <a class="dropdown-item text-center" href="#">
-                  <input type="text" id="cont-serv-cant-text">
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- fin de servicio 2 -->
-          <!-- servicio 3 -->
-          <div class="d-flex cot-s cot-s3">
-            <div class="dropdown w-100">
-              <button type="button" class="btn btn-secondary dropdown-toggle" id="cot-serv" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                Elije un servicio
-              </button>
-              <div class="dropdown-menu cot-serv-btn" aria-labelledby="cot-serv">
-                <a class="dropdown-item text-center" href="#">Lavado de alfombra</a>
-                <a class="dropdown-item text-center" href="#">Lavado de sillones</a>
-                <a class="dropdown-item text-center" href="#">Lavado de sillas</a>
-              </div>
-            </div>
-            <!-- change everything -->
-            <div class="dropdown ">
-              <button type="button" class="btn btn-secondary dropdown-toggle " id="cot-cant" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="">
-                #
-              </button>
-              <div class="dropdown-menu cot-serv-cant-btn" aria-labelledby="cot-cant">
-                <a class="dropdown-item text-center" href="#">1</a>
-                <a class="dropdown-item text-center" href="#">2</a>
-                <a class="dropdown-item text-center" href="#">3</a>
-                <a class="dropdown-item text-center" href="#">4</a>
-                <a class="dropdown-item text-center" href="#">5</a>
-                <a class="dropdown-item text-center" href="#">
-                  <input type="text" id="cont-serv-cant-text">
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- fin de servicio 3 -->
-          <!-- servicio 4 -->
-          <div class="d-flex cot-s cot-s4">
-            <div class="dropdown w-100">
-              <button type="button" class="btn btn-secondary dropdown-toggle" id="cot-serv" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                Elije un servicio
-              </button>
-              <div class="dropdown-menu cot-serv-btn" aria-labelledby="cot-serv">
-                <a class="dropdown-item text-center" href="#">Lavado de alfombra</a>
-                <a class="dropdown-item text-center" href="#">Lavado de sillones</a>
-                <a class="dropdown-item text-center" href="#">Lavado de sillas</a>
-              </div>
-            </div>
-            <!-- change everything -->
-            <div class="dropdown ">
-              <button type="button" class="btn btn-secondary dropdown-toggle " id="cot-cant" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="">
-                #
-              </button>
-              <div class="dropdown-menu cot-serv-cant-btn" aria-labelledby="cot-cant">
-                <a class="dropdown-item text-center" href="#">1</a>
-                <a class="dropdown-item text-center" href="#">2</a>
-                <a class="dropdown-item text-center" href="#">3</a>
-                <a class="dropdown-item text-center" href="#">4</a>
-                <a class="dropdown-item text-center" href="#">5</a>
-                <a class="dropdown-item text-center" href="#">
-                  <input type="text" id="cont-serv-cant-text">
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- fin de servicio 4 -->
-          <!-- servicio 5 -->
-          <div class="d-flex cot-s cot-s5">
-            <div class="dropdown w-100">
-              <button type="button" class="btn btn-secondary dropdown-toggle" id="cot-serv" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                Elije un servicio
-              </button>
-              <div class="dropdown-menu cot-serv-btn" aria-labelledby="cot-serv">
-                <a class="dropdown-item text-center" href="#">Lavado de alfombra</a>
-                <a class="dropdown-item text-center" href="#">Lavado de sillones</a>
-                <a class="dropdown-item text-center" href="#">Lavado de sillas</a>
-              </div>
-            </div>
-            <!-- change everything -->
-            <div class="dropdown ">
-              <button type="button" class="btn btn-secondary dropdown-toggle " id="cot-cant" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="">
-                #
-              </button>
-              <div class="dropdown-menu cot-serv-cant-btn" aria-labelledby="cot-cant">
-                <a class="dropdown-item text-center" href="#">1</a>
-                <a class="dropdown-item text-center" href="#">2</a>
-                <a class="dropdown-item text-center" href="#">3</a>
-                <a class="dropdown-item text-center" href="#">4</a>
-                <a class="dropdown-item text-center" href="#">5</a>
-                <a class="dropdown-item text-center" href="#">
-                  <input type="text" id="cont-serv-cant-text">
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- fin de servicio 5 -->
-          <!-- servicio 6 -->
-          <div class="d-flex cot-s cot-s6">
-            <div class="dropdown w-100">
-              <button type="button" class="btn btn-secondary dropdown-toggle" id="cot-serv" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                Elije un servicio
-              </button>
-              <div class="dropdown-menu cot-serv-btn" aria-labelledby="cot-serv">
-                <a class="dropdown-item text-center" href="#">Lavado de alfombra</a>
-                <a class="dropdown-item text-center" href="#">Lavado de sillones</a>
-                <a class="dropdown-item text-center" href="#">Lavado de sillas</a>
-              </div>
-            </div>
-            <!-- change everything -->
-            <div class="dropdown ">
-              <button type="button" class="btn btn-secondary dropdown-toggle " id="cot-cant" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="">
-                #
-              </button>
-              <div class="dropdown-menu cot-serv-cant-btn" aria-labelledby="cot-cant">
-                <a class="dropdown-item text-center" href="#">1</a>
-                <a class="dropdown-item text-center" href="#">2</a>
-                <a class="dropdown-item text-center" href="#">3</a>
-                <a class="dropdown-item text-center" href="#">4</a>
-                <a class="dropdown-item text-center" href="#">5</a>
-                <a class="dropdown-item text-center" href="#">
-                  <input type="text" id="cont-serv-cant-text">
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- fin de servicio 6-->
-        </div>
-        <!-- fin de opciona para agregar hasta 6 servicios -->
-        <button class="cot-new-serv-add" onclick="cotNewServiceAdder()">Agregar otro servicio</button>
-        <button class="cot-new-serv-rem" onclick="cotNewServiceEliminator()">Eliminar servicio</button>
-
-      </section>
+      <button id="cot-btn-cotizar">Cotizar</button>
+     
     </main>
     <footer>
         <section class="ft-c-s row">
