@@ -1,5 +1,10 @@
 console.log('Js is conected');
 
+setTimeout(function(){
+
+}, 2000);
+
+
 function nmc(){
     if($('.n-m-c').is(':visible')){
         $('.n-m-c').css('visibility', 'hidden');
@@ -11,7 +16,6 @@ function ndc(){
         $('.n-m-c').css('visibility', 'visible');
     }
 }
-
 
 function cardImgExpandXS(x){
     /*Optional - agregate value*/
@@ -32,29 +36,11 @@ function cardImgExpandM(x){
 
 }
 
-/*
-This code is for expandingthe cards all the way accros only for XL, L and/or M
-    if(document.getElementById('n-ns-sc1').classList.contains('col-lg-12')){
-        document.getElementById('n-ns-sc1').classList.remove('col-lg-12');
-        document.getElementById('n-ns-sc1').classList.add('col-lg-6');
-        setTimeout(function(){
-            $('#n-ns-sc2').css('display','block');
-        }, 1000);
-    } else{
-        $('#n-ns-sc2').css('display','none');
-        document.getElementById('n-ns-sc1').classList.remove('col-lg-6');
-        document.getElementById('n-ns-sc1').classList.add('col-lg-12');
-    }
-*/
 function cardImgExpandL(x){
 
 }
 
 function cardImgExpandXL(){
-
-
-
-
 
 }
 

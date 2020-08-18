@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" >
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -18,17 +18,13 @@
     <nav id="nav">
         <div class="d-flex flex-grow-1">
             <div class="n-ml-c">
-                <a href="/index.html">
-                    <button>
-                        <img src="/Assets/Logo Figueroas Clean.svg">
-                    </button>
+                <a href="/index.html" class="button">
+                    <img id='nav-logo' src="/Assets/Logo Figueroas Clean.svg">
                 </a>
             </div>
             <div class="n-o-c align-self-center">
                 <div class="n-o-c-i">
-                    <a href="/index.html">
-                        <button>Inicio</button>
-                    </a>
+                    <button onclick="location.reload()">Inicio</button>
                 </div>
                 <div class="n-o-c-i">
                     <a href="/html/ns.html">
@@ -48,7 +44,7 @@
             </div>
         </div>
         <div class="align-self-center n-m-c">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="nmc()">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="navMenuContainer()">
                 <img class="n-m-c-i n-i" src="/Assets/N-MenuIcon.svg">
             </button>
         </div>
@@ -86,7 +82,7 @@
                     </button>
                 </div>
                 <div class="nav-item nav-link" href="#">
-                    <button class="navbar-toggler n-d-c" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="ndc()">
+                    <button class="navbar-toggler n-d-c" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="navDropdownCancel()">
                         <img class="n-d-c-i n-i" src="Assets/N-CancelIcon.svg">
                     </button>
                 </div>
@@ -110,8 +106,8 @@
         <section id="m-c">
             <!-- main - video player - container -->
             <section class="m-vp-c d-flex">
-                <video class="w-100" id="m-vp-v" autoplay loop muted>
-                    <source src="/Assets/VP Video prueba.MP4" type="video/mp4">
+                <video class="w-100" id="m-vp-v" preload="none" loop muted controls>
+                    <source id="m-vp-v-s"src="/Assets/VP Video prueba.MP4" type="video/mp4">
                 </video>
                 <div id="m-vp-smc" class="flex-shrink-0">
                     <figure class="sm-i">
@@ -190,7 +186,7 @@
                             <a href="#" class="card-link cies-r">Ver servicios</a>
                         </div>
                         <!-- carta de servicio - residencial-->
-                        <button type="button" data-toggle="modal" data-target="#cs-r-modal" class="ci" id="cri-id" >
+                        <button type="button" data-toggle="modal" data-target="#cs-r-modal" class="ci" id="cri-id" onclick="cardImgExpand('m-cs-sc-sr-id', 'cri-id', 'm-cs-sc-sc-id')" >
                             <img id="ci-r" src="Assets/C img residencial.JPG">
                         </button>
                         <!-- cartas de servicio - residencial - Modal -->
@@ -201,28 +197,26 @@
                             </div>
                             </div>
                         </div>
-                        
                     </div>
-
                     <!-- Comercial -->
                     <div class="m-cs-sc-sc c col-lg-6" id="m-cs-sc-sc-id">    
                         <!-- Card -->
-                        <div class="card-body ct ">
-                            <h5 class="card-title text-center">Servicios Comerciales </h5>
-                            <p class="card-text text-wrap text-justify">
+                        <div class="card-body ct cies-r">
+                            <h5 class="card-title text-center cies-r">Servicios Comerciales </h5>
+                            <p class="card-text text-wrap text-justify cies-r">
                                 Nuestros servicios comerciales estan diseñados para ser rapidos, 
                                 eficientes y con sus clientes en mente, para que luzca su negocio 
                                 como se debe.
                             </p>
-                            <a href="#" class="card-link cl-star " style='width: 21px; height: 21px;'>
+                            <a href="#" class="card-link cl-star cies-r" style='width: 21px; height: 21px;'>
                                 <svg width="21px" height="21px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" >
                                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                                 </svg>
                             </a>
-                            <a href="#" class="card-link">Ver servicios</a>
+                            <a href="#" class="card-link cies-r">Ver servicios</a>
                         </div>
                         <!-- carta de servicio - comercial-->
-                        <button type="button" data-toggle="modal" data-target="#cs-c-modal" class="ci cci" id="cci-id">
+                        <button type="button" data-toggle="modal" data-target="#cs-c-modal" class="ci" id="cci-id" onclick="cardImgExpand('m-cs-sc-sc-id', 'cci-id', 'm-cs-sc-sr-id')">
                             <img id="ci-c" src="/Assets/C img comercial.jpg">
                         </button>
                         <!-- cartas de servicio - comercial - Modal -->
@@ -239,21 +233,22 @@
                 <div class="row justify-content-center">
                     <!-- Industrial -->
                     <div class="m-cs-sc-si c col-lg-6" id="m-cs-sc-si-id">
-                        <div class="card-body ct">
-                            <h5 class="card-title text-center">Servicios Industriales</h5>
-                            <p class="card-text text-wrap text-justify">
+                        <!-- Card -->
+                        <div class="card-body ct cies-r">
+                            <h5 class="card-title text-center cies-r">Servicios Industriales</h5>
+                            <p class="card-text text-wrap text-justify cies-r">
                                 Nuestros servicios industriales, son seguros, rapidos y sin riesgos.
                                 Garantizamos todos nuestros servicios y ofrecemos facilidad de pago.
                             </p>
-                            <a href="#" class="card-link cl-star" style='width: 21px; height: 21px;'>
+                            <a href="#" class="card-link cl-star cies-r" style='width: 21px; height: 21px;'>
                                 <svg width="21px" height="21px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" >
                                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                                 </svg>
                             </a>
-                            <a href="#" class="card-link">Ver servicios</a>
+                            <a href="#" class="card-link cies-r">Ver servicios</a>
                         </div>
                         <!-- carta de servicio - industrial-->
-                        <button type="button" data-toggle="modal" data-target="#cs-i-modal" class="ci" id="cii-id">
+                        <button type="button" data-toggle="modal" data-target="#cs-i-modal" class="ci" id="cii-id" onclick="cardImgExpand('m-cs-sc-si-id', 'cii-id', 'none')">
                             <img id="ci-i" src="/Assets/C img industrial.jpg">
                         </div>
                         <!-- cartas de servicio - comercial - Modal -->
@@ -284,6 +279,7 @@
                 <div class="db-num">
                     <p class="text-center">Celular: +52 - 656 - 603 - 6947</p>
                     <p class="text-center">Oficina: 693 - 2537</p>
+                    <p class="text-center">figueroasclean@outlook.com</p>
                 </div>
             </div>
         </section>

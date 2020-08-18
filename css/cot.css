@@ -194,6 +194,7 @@ nav div button img{
     transition: all .3s ease-in-out 0s;
     border-radius: 20px;
     border: none;
+    padding-left: 12px;
 }
 
 .calendario-c{
@@ -231,6 +232,10 @@ nav div button img{
     visibility: collapse;
     height: 0px;
 
+}
+
+.dropdown{
+    position: relative;
 }
 
 .cot-s1{
@@ -364,6 +369,9 @@ nav div button img{
         height: 100%;
     }
 
+    .cot-new-serv-rem{
+        display: block;
+    }
     /* */
 
     #ftcsArrowContainer{
@@ -473,6 +481,10 @@ nav div button img{
     .calendario-c{
         padding-left: 26px;
     }
+
+    .cot-new-serv-rem{
+        display: block;
+    }
     /**/
 
     /* footer arrow*/
@@ -540,6 +552,10 @@ nav div button img{
 
     .col-xl-3{
         display: block
+    }
+
+    .cot-new-serv-rem{
+        display: block;
     }
     /* */
 

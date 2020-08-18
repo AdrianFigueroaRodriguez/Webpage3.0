@@ -73,6 +73,15 @@ img{
     height: 100%;
 }
 
+a.button{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+
 /* Bootstrap class adjustments*/
 .container{
     width: auto;
@@ -130,9 +139,8 @@ img{
 }
 
 /* navbar- main logo - container - image*/
-nav div button img{
+#nav-logo{
     max-height: 65px;
-    
 }
 
 /* navbar - options - contianer*/
@@ -251,6 +259,7 @@ nav div button img{
 
 /* carta - texto - contenedor*/
 .ct{
+    background-color: #ffffff;
     width: auto;
     height: auto;
 }
@@ -480,12 +489,6 @@ nav div button img{
 */
 
 
-
-
-
-
-
-
 /* large devices (large desktops, 992px to 1200px)*/
 @media (min-width: 992.001px) and (max-width: 1200px){ 
     .nNAM2{
@@ -502,19 +505,11 @@ nav div button img{
         background-color: transparent;
     }
 
-    .ct{
-        background-color: #ffffff;
-    }
-
     .ci{
         height: 200px;
         width: auto;
         background-position: center;
         background-size: cover;
-    }
-
-    .cci{
-        background-position: top;
     }
 
     .modal-backdrop, .fade .show {
@@ -561,6 +556,44 @@ nav div button img{
 
 /* extra large devices (extra large desktops, 1200px and up)*/
 @media (min-width: 1200px){
+    .m-ns-sc2{
+        padding-left: 26px;
+    }
+
+    .card-body{
+        height: 173px;
+    }
+
+    .card-text{
+        height: 72px;
+    }
+
+    #m-cs-sc-sr-id{
+        margin: 0px;
+        padding: 26px 26px 0px 26px;
+        background-color: transparent;
+        
+    }
+
+    #m-cs-sc-sr-id button{
+        height: 100%;
+        min-height: 388.5px;
+        max-height: 388.5px;
+    }
+
+    #m-cs-sc-sc-id{
+        margin: 0px;
+        padding: 26px 26px 0px 26px;
+        background-color: transparent;
+        
+    }
+
+    #m-cs-sc-sc-id button{
+        height: 100%;
+        min-height: 388.5px;
+        max-height: 388.5px;
+    }
+
     #ftcsArrowContainer{
         padding-left: 64.65px;
         padding-right: 0px;
