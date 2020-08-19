@@ -594,6 +594,16 @@ a.button{
         max-height: 388.5px;
     }
 
+    .modal-backdrop, .fade .show {
+        opacity: 100%;
+        position: static;
+        background-color: transparent;
+        transition: none;
+        overflow: auto;
+    }
+
+
+
     #ftcsArrowContainer{
         padding-left: 64.65px;
         padding-right: 0px;
