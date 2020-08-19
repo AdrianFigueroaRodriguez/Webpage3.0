@@ -108,25 +108,25 @@ function cardImgExpandL(cardImgContainerId, btnId, unNeededCard){
 }
 
 function cardImgExpandXL(cardImgContainerId, btnId, unNeededCard){
-    if($(`#` + `${cardImgContainerId}` + ` #` + `${btnId}`).prop('clientHeight') == 200){
+    if($(`#` + `${cardImgContainerId}` + ` #` + `${btnId}`).prop('clientHeight') == 389){
         $(`#` + `${cardImgContainerId}` + ` .cies-r`).css('visibility', 'collapse ');
         $(`#` + `${cardImgContainerId}` + ` .cies-r`).css('padding', '0px');
         $(`#` + `${cardImgContainerId}` + ` .cies-r`).css('margin', '0px');
         $(`#` + `${cardImgContainerId}` + ` .cies-r`).css('height', '0px');
-        $(`#` + `${cardImgContainerId}` + ` #` + `${btnId}`).css('height', '373px');
+        $(`#` + `${cardImgContainerId}` + ` button`).css('max-height', '587px');
         $(`#` + `${cardImgContainerId}` + ` #` + `${btnId}`).css('width', 'max-content');
         document.getElementById(cardImgContainerId).classList.remove('col-lg-6');
         document.getElementById(cardImgContainerId).classList.add('col-lg-12');
         $('#' + `${unNeededCard}`).css('visibility', 'collapse');
-        $(`#` + `${unNeededCard}` + ` .cies-r`).css('visibility', 'collapse');    
+        $(`#` + `${unNeededCard}` + ` .cies-r`).css('visibility', 'collapse');
 
-    } else{
+    } else {
         $(`#` + `${cardImgContainerId}` + ` .cies-r`).css('visibility', 'visible');
         $(`#` + `${cardImgContainerId}` + ` .card-body`).css('padding', '1.25rem');
         $(`#` + `${cardImgContainerId}` + ` .card-title`).css('margin-bottom', '.75rem');
         $(`#` + `${cardImgContainerId}` + ` .cl-star`).css('visibility', 'collapse');
         $(`#` + `${cardImgContainerId}` + ` .cies-r`).css('height', 'auto');
-        $(`#` + `${cardImgContainerId}` + ` #` + `${btnId}`).css('height', '200');
+        $(`#` + `${cardImgContainerId}` + ` #` + `${btnId}`).css('height', '389');
         $(`#` + `${cardImgContainerId}` + ` #` + `${btnId}`).css('width', 'auto');
         document.getElementById(cardImgContainerId).classList.remove('col-lg-12');
         document.getElementById(cardImgContainerId).classList.add('col-lg-6');

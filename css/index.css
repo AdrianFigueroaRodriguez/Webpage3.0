@@ -498,6 +498,14 @@ a.button{
     .m-ns-sc2{
         padding-left: 26px;
     }
+
+    #mision-container-id{
+        padding-right: 26px;
+    }
+
+    #vision-container-id{
+        padding-left: 26px;
+    }
     
     .c{
         margin: 0px;
@@ -518,6 +526,7 @@ a.button{
         background-color: transparent;
         transition: none;
         overflow: auto;
+        display: hidden;
     }
 
     body{
@@ -538,6 +547,10 @@ a.button{
         transition: all 1s ease-in-out 0s;
     }
 
+    #n-ns-sc2 div{
+        padding: 100px 0px;
+    }
+
     #ftcsArrowContainer{
         padding-left: 49.6px;
         padding-right: 0px;
@@ -556,6 +569,11 @@ a.button{
 
 /* extra large devices (extra large desktops, 1200px and up)*/
 @media (min-width: 1200px){
+    #nav-logo{
+        max-height: 65px;
+        visibility: visible;
+    }
+
     .m-ns-sc2{
         padding-left: 26px;
     }
@@ -572,12 +590,10 @@ a.button{
         margin: 0px;
         padding: 26px 26px 0px 26px;
         background-color: transparent;
-        
     }
 
     #m-cs-sc-sr-id button{
         height: 100%;
-        min-height: 388.5px;
         max-height: 388.5px;
     }
 
@@ -585,13 +601,29 @@ a.button{
         margin: 0px;
         padding: 26px 26px 0px 26px;
         background-color: transparent;
-        
     }
 
     #m-cs-sc-sc-id button{
         height: 100%;
         min-height: 388.5px;
         max-height: 388.5px;
+    }
+    
+    .m-i-fix{
+        visibility: collapse;
+    }
+
+    #n-ns-sc2 div{
+        padding: 130px 0px;
+    }
+
+
+    #mision-container-id{
+        padding-right: 26px;
+    }
+
+    #vision-container-id{
+        padding-left: 26px;
     }
 
     .modal-backdrop, .fade .show {
@@ -601,8 +633,15 @@ a.button{
         transition: none;
         overflow: auto;
     }
+    
+    #cs-r-modal{
+        display: none !important;
+    }
 
-
+    .modal-open{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
 
     #ftcsArrowContainer{
         padding-left: 64.65px;

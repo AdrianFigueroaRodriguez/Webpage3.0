@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Personalized CSS-->
     <link rel="stylesheet" href="/css/index.css">
 
@@ -112,7 +112,7 @@
                 <div id="m-vp-smc" class="flex-shrink-0">
                     <figure class="sm-i">
                         <a href="https://web.whatsapp.com/" class="button">
-                            <img class="sm-logo" src='/Assets/VP wa Logo.svg'>
+                            <img loading="lazy" class="sm-logo" src='/Assets/VP wa Logo.svg'>
                         </a>
                     </figure>
                     <figure class="sm-i">
@@ -137,34 +137,46 @@
                 <!-- nosotros somos - image - container-->
                 <div class='col-lg-6 m-ns-sc1' id="n-ns-sc1">
                     <button type="button" data-toggle="modal" data-target="#ns-modal">
-                        <img src="/Assets/ns Image.jpg">
+                        <img src="/Assets/NS img.jpg">
                     </button>
                 </div>
-                    <!-- nosotros somos - image - Modal -->
-                    <div class="modal fade m-s" id="ns-modal" tabindex="-1" aria-labelledby="ns-modalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered m-i-fix">
-                        <div class="modal-content">
-                            <img src="/Assets/ns Image.jpg">
-                        </div>
-                        </div>
+                <!-- nosotros somos - image - Modal -->
+                <div class="modal fade m-s" id="ns-modal" tabindex="-1" aria-labelledby="ns-modalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered m-i-fix">
+                    <div class="modal-content">
+                        <img src="/Assets/NS img.jpg">
                     </div>
+                    </div>
+                </div>
                 <!-- nosotros somos - text - container -->
                 <div class='col-lg-6 m-ns-sc2' id="n-ns-sc2">
-                    <h1 class="text-center">Nosotros Somos</h1>
-                    <p class="text-justify"> Somos una empresa seria y responsable dedicada al cuidado de la salud.</p>
+                    <div>
+                        <h1 class="text-center">Nosotros Somos...</h1>
+                        <p class="text-justify">Una empresa  seria y responsable dedicada abrindar los mejores servicios 
+                            de limpieza! Ofreciendo le a usted y su familia seguridad, calidad y costos accesibles. 
+                        </p>
+                    </div>
                 </div>
             </section>
             <!-- main - mision y vision - container -->
             <section class="m-mv-c row"> 
                 <!-- mision - container-->
-                <div class="col-lg-6">
+                <div class="col-lg-6" id="mision-container-id">
                     <h1 class="text-center">Mision</h1>
-                    <p class="text-justify">Nuestra mision es...</p>
+                    <p class="text-justify">Cuidar la salud de las personas es nuestra misión y compromiso, 
+                        siempre ofreciendo productos, servicios y experiencias de alta calidad, creando lazos 
+                        de respeto, honestidad y tolerancia con cada miembro de nuestro equipo y nuestros clientes.
+                    </p>
                 </div>
                 <!-- vision - container -->
-                <div class="col-lg-6">
+                <div class="col-lg-6" id="vision-container-id">
                     <h1 class="text-center">Vision</h1>
-                    <p class="text-justify">Nuestra vision es..</p>
+                    <p class="text-justify">Ser una empresa sustentable reconocida a nivel estatal por la 
+                        calidad, dedicación y servicios que ofrecemos. Comprometidos en ser una empresa líder 
+                        en el mercado con esfuerzo y compromiso con cada uno de nuestros clientes y responder 
+                        a los constantes cambios, promoviendo el uso de nuevas tecnologías para el cuidado del 
+                        medio ambiente, no por nosotros, sino por las familias.
+                    </p>
                 </div>
             </section>
             <!-- main - cartas deservicio - container-->
